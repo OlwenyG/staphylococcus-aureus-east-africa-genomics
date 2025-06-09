@@ -1,0 +1,3267 @@
+---
+title: "Thesis"
+author: "Geoffrey Olweny"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Read in the files
+
+```{r}
+#Set working directory
+#setwd("AMR)
+#list.files
+```
+## Load packages
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(dplyr)
+library(viridis)  # For color palette
+library(dplyr)
+library(stringr)
+library(cowplot)
+```
+
+## Create dataframe
+
+```{r}
+setwd("D:/mrsa/abricate/AMR/")
+# List all summary.txt files in the directory
+file_list <- list.files(pattern = "summary\\.txt$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+df_list <- list()
+
+# Define the expected column names
+common_cols <- c("FILE", "SEQUENCE", "START", "END", "STRAND", "GENE", 
+                 "COVERAGE", "COVERAGE_MAP", "GAPS", "%COVERAGE", 
+                 "%IDENTITY", "DATABASE", "ACCESSION", "PRODUCT", "RESISTANCE")
+
+# Loop through each file and read it into a data frame
+for (file in file_list) {
+  # Check if the file is not empty
+  if (file.info(file)$size > 0) {
+    # Try to read the file and skip if there's an error
+    try({
+      df <- read.table(file, header = TRUE, sep = "\t", fill = TRUE, comment.char = "", stringsAsFactors = FALSE)
+      
+      # Ensure that we have at least the expected number of columns (to avoid NAs)
+      if (ncol(df) >= length(common_cols)) {
+        # Subset the dataframe to keep only the expected columns, or add missing ones
+        colnames(df) <- common_cols[1:ncol(df)]
+        missing_cols <- setdiff(common_cols, colnames(df))
+        
+        # Add missing columns with NA values if necessary
+        if (length(missing_cols) > 0) {
+          df[missing_cols] <- NA
+        }
+        
+        # Reorder columns to match the common structure
+        df <- df[, common_cols]
+        
+        # Store each valid data frame in the list
+        df_list[[file]] <- df
+      } else {
+        cat("Skipping file due to insufficient columns:", file, "\n")
+      }
+    }, silent = TRUE)
+  } else {
+    cat("Skipping empty file:", file, "\n")
+  }
+}
+
+# Combine all valid data frames into one
+final_df <- do.call(rbind, df_list)
+
+# Optionally, you can write the combined dataframe to a new file
+write.csv(final_df, "merged_summary.csv", row.names = TRUE)
+
+# Print the combined data frame to check
+print(final_df)
+
+
+```
+
+
+```{r}
+# Extract genome IDs from the FILE column
+final_df$GENOME_ID <- gsub(".*(ERR[0-9]+).*", "\\1", final_df$FILE)
+
+# Define genome ID ranges for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455))
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850))
+
+# Create a mapping dataframe
+country_mapping <- data.frame(
+  GENOME_ID = c(uganda_ids, kenya_ids, tanzania_ids),
+  COUNTRY = c(
+    rep("Uganda", length(uganda_ids)),
+    rep("Kenya", length(kenya_ids)),
+    rep("Tanzania", length(tanzania_ids))
+  )
+)
+
+# Merge country information into final_df
+final_df <- merge(final_df, country_mapping, by = "GENOME_ID", all.x = TRUE)
+
+# View the updated dataframe
+head(final_df)
+```
+
+
+```{r}
+setwd("D:/mrsa/abricate/AMR/")
+
+library(ggplot2)
+library(dplyr)
+library(viridis)  # For color palette
+
+# Count occurrences of each resistance type for each gene
+resistance_counts <- final_df %>%
+  group_by(GENE, RESISTANCE, PRODUCT, ACCESSION, COUNTRY) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Filter out empty and NA resistance types
+resistance_counts <- resistance_counts %>%
+  filter(RESISTANCE != "" & !is.na(RESISTANCE))
+
+# Summing the counts for each GENE across different RESISTANCE types
+gene_totals <- resistance_counts %>%
+  group_by(GENE) %>%
+  summarise(total_count = sum(count), .groups = 'drop') %>%
+  arrange(desc(total_count))  # Sort by total counts
+
+# Get the top 20 genes with the highest overall counts
+top_gene_totals <- gene_totals %>%
+  slice_head(n = 20)  # Select the top 20 genes
+
+# Plotting the top 20 genes with total counts
+q <- ggplot(top_gene_totals, aes(x = reorder(GENE, total_count), y = total_count)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  
+  # Add labels for total counts
+  geom_text(aes(label = total_count), 
+            vjust = -0.5, size = 3) +
+  
+  theme_light(base_size = 15) +  # Use a light theme
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 10),  # Rotate x-axis text and adjust size
+        axis.text.y = element_text(size = 10),  # Adjust y-axis text size
+        legend.position = "none") +  # No legend needed since we're showing totals
+  labs(title = "Top 20 Genes by Total Counts", x = "Genes", y = "Total Count")
+
+# Save the plot as a high-resolution image
+ggsave("top_20_gene_totals_plot.png", plot = q, width = 10, height = 6, dpi = 300)
+
+# Print the plot
+print(q)
+
+# Save data as CSV
+write.csv(top_gene_totals, file = "top_gene_totals.csv", row.names = FALSE)
+write.csv(resistance_counts, file = "amr.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(viridis)  # For color palette
+
+# Count occurrences of each resistance type for each gene
+resistance_counts <- final_df %>%
+  group_by(GENE, RESISTANCE, PRODUCT, ACCESSION, COUNTRY) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Filter out empty and NA resistance types
+resistance_counts <- resistance_counts %>%
+  filter(RESISTANCE != "" & !is.na(RESISTANCE))
+
+# Summing the counts for each GENE across different RESISTANCE types
+gene_totals <- resistance_counts %>%
+  group_by(GENE) %>%
+  summarise(total_count = sum(count), .groups = 'drop') %>%
+  arrange(desc(total_count))  # Sort by total counts
+
+# Calculate the percentage for each gene relative to the total
+gene_totals <- gene_totals %>%
+  mutate(percentage = (total_count / sum(total_count)) * 100)
+
+# Get the top 20 genes with the highest percentages
+top_gene_totals <- gene_totals %>%
+  slice_head(n = 20)  # Select the top 20 genes
+
+# Plotting the top 20 genes with percentages
+q <- ggplot(top_gene_totals, aes(x = reorder(GENE, percentage), y = percentage)) +
+  geom_bar(stat = "identity", fill = viridis(20)[1]) +  # Use the viridis color palette
+  
+  # Add labels for percentages
+  geom_text(aes(label = sprintf("%.1f%%", percentage)), 
+            vjust = -0.5, size = 4, color = "black") +
+  
+  # Improve the theme and visual appeal
+  theme_minimal(base_size = 16) +  # Minimal theme for clean look
+  theme(
+    axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 12),  # Angle x-axis labels
+    axis.text.y = element_text(size = 12),  # Adjust y-axis text size
+    axis.title.x = element_text(size = 14),  # Adjust x-axis title size
+    axis.title.y = element_text(size = 14),  # Adjust y-axis title size
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.5),  # Title customization
+    legend.position = "none",  # No legend needed
+    plot.margin = margin(1, 1, 1, 1, "cm")  # Add some padding around the plot
+  ) +
+  labs(title = "Top 20 AMR Genes ", x = "Genes", y = "Percentage (%)") +
+  ylim(0, max(top_gene_totals$percentage) * 1.1)  # Ensure enough space for labels
+
+# Save the plot as a high-resolution image (300 dpi)
+ggsave("Result_AMR/top_20_AMR_gene_totals_plot_percentage.jpg", plot = q, width = 10, height = 6, dpi = 300)
+
+# Print the plot
+print(q)
+
+# Save data as CSV
+write.csv(top_gene_totals, file = "top_gene_totals_percentage.csv", row.names = FALSE)
+write.csv(resistance_counts, file = "amr.csv", row.names = FALSE)
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Count occurrences and calculate total percentage per accession
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  ungroup() %>%
+  mutate(Total_Count = sum(Count),  # Total count for percentage conversion
+         Percentage = (Count / Total_Count) * 100)  # Convert to percentage
+
+# Select the top 20 most abundant accessions across all countries
+top_20_accessions <- gene_country_summary %>%
+  group_by(GENE) %>%
+  summarise(Total_Abundance = sum(Count), .groups = 'drop') %>%
+  arrange(desc(Total_Abundance)) %>%
+  slice_head(n = 20) %>%
+  pull(GENE)
+
+# Filter data for only the top 20 accessions
+gene_top_20 <- gene_country_summary %>%
+  filter(GENE %in% top_20_accessions)
+
+# Plot the top 20 plasmid genes as percentages
+p <-ggplot(gene_top_20, aes(x = reorder(GENE, -Percentage), y = Percentage, fill = COUNTRY)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +  # Adjust bar width and spacing
+  
+  scale_fill_brewer(palette = "Set2") +  # Use colorblind-friendly palette
+  labs(title = "Top 20 AMR Gene Distributions by Country",
+       x = "AMR Gene",
+       y = "Percentage (%)",
+       fill = "Country") +
+  theme_minimal(base_size = 14) +  # Use clean minimal theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Improve x-axis readability
+        legend.position = "top",  # Move legend to the top
+        plot.title = element_text(face = "bold", hjust = 0.5))  # Center and bold title
+ggsave("Result_AMR/top_20_AMR_gene_distributions.jpg", plot = p, width = 10, height = 6, dpi = 600)
+print(p)
+```
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(RColorBrewer)
+
+# Remove metadata from genes using regex
+final_df$GENE <- gsub("\t.*", "", final_df$GENE)
+
+# Create output directory for high-quality plots
+output_dir <- "Result_AMR/AMR_Gene_PieCharts"
+if (!dir.exists(output_dir)) dir.create(output_dir)
+
+# Summarize AMR gene counts per country
+amr_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = "drop")
+
+# Get a unique list of genes and countries
+unique_genes <- unique(amr_summary$GENE)
+countries <- unique(amr_summary$COUNTRY)
+
+# Generate a distinct color palette for all genes
+num_genes <- length(unique_genes)
+color_palette <- colorRampPalette(brewer.pal(12, "Set3"))(num_genes)  # Expands beyond 12 colors
+gene_colors <- setNames(color_palette, unique_genes)  # Ensure consistent colors across plots
+
+# Loop through each country and generate a pie chart
+for (country in countries) {
+  
+  # Filter data for the specific country
+  country_data <- amr_summary %>% filter(COUNTRY == country)
+  
+  # Generate the pie chart
+  p <- ggplot(country_data, aes(x = "", y = Count, fill = GENE)) +
+    geom_bar(stat = "identity", width = 1) +
+    coord_polar(theta = "y") +
+    theme_void() + # Remove background
+    labs(title = paste("AMR Gene Abundance in", country), fill = "AMR Gene") +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+      legend.title = element_text(size = 12, face = "bold"),
+      legend.text = element_text(size = 10)
+    ) +
+    scale_fill_manual(values = gene_colors)  # Apply dynamically generated colors
+
+  # Save the plot in high resolution
+  ggsave(
+    filename = file.path(output_dir, paste0("AMR_Genes_", country, ".jpg")),
+    plot = p,
+    width = 10, height = 10, dpi = 600
+  )
+}
+p
+
+```
+
+
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(ggpubr)
+
+# Summarize AMR gene counts per country
+amr_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = "drop")
+
+# Perform Kruskal-Wallis test for overall differences across countries
+kruskal_test <- kruskal.test(Count ~ COUNTRY, data = amr_summary)
+print(kruskal_test)
+
+# Store p-values for pairwise Wilcoxon test
+p_values <- data.frame(Comparison = character(), P_Value = numeric(), Significance = character())
+
+if (kruskal_test$p.value < 0.05) {
+  pairwise_tests <- pairwise.wilcox.test(amr_summary$Count, amr_summary$COUNTRY, p.adjust.method = "BH")
+  
+  for (i in 1:nrow(pairwise_tests$p.value)) {
+    for (j in 1:ncol(pairwise_tests$p.value)) {
+      p_val <- pairwise_tests$p.value[i, j]
+      
+      if (!is.na(p_val)) {
+        comparison <- c(rownames(pairwise_tests$p.value)[i], colnames(pairwise_tests$p.value)[j])
+        
+        # Define significance levels
+        sig_level <- ifelse(p_val < 0.0001, "****",
+                     ifelse(p_val < 0.001, "***",
+                     ifelse(p_val < 0.01, "**",
+                     ifelse(p_val < 0.05, "*", "ns"))))
+
+        # Store values
+        p_values <- rbind(p_values, data.frame(Comparison = list(comparison), P_Value = p_val, Significance = sig_level))
+      }
+    }
+  }
+}
+
+print(p_values)  # Show the p-values and significance levels
+
+# Boxplot with significance annotations
+p <- ggplot(amr_summary, aes(x = COUNTRY, y = Count, fill = COUNTRY)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.6) +  # Boxplot without outliers
+  geom_jitter(position = position_jitter(0.2), size = 2, alpha = 0.8) +  # Add points for individual data
+  scale_fill_brewer(palette = "Set1") +  # Color-blind friendly palette
+  theme_minimal() +  
+  labs(title = "AMR Gene Abundance Across Countries", y = "AMR Gene Count", x = "Country") +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+
+# Add significance levels to the boxplot
+if (nrow(p_values) > 0) {
+  p <- p + stat_pvalue_manual(p_values, label = "Significance")
+}
+
+# Save the high-quality plot
+ggsave("Result_AMR/AMR_Abundance_Comparison.jpg", plot = p, width = 10, height = 6, dpi = 600)
+
+print(p)  # Show the plot
+
+```
+
+```{r}
+# Summarize the frequency and percentage of each plasmid replicon (GENE)
+plasmid_summary <- final_df %>%
+  group_by(GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  mutate(Percentage = (Count / sum(Count)) * 100)
+
+# Sort by frequency in descending order
+virulence_summary <- plasmid_summary[order(-plasmid_summary$Count), ]
+
+# View the summary
+print(virulence_summary)
+write.csv("Result_AMR/AMR_genes.csv", row.names = TRUE )
+```
+
+
+## Virulence genes
+```{r}
+setwd("D:/mrsa/abricate/Virulence//")
+# List all summary.txt files in the directory
+file_list <- list.files(pattern = "summary\\.txt$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+df_list <- list()
+
+# Define the expected column names
+common_cols <- c("FILE", "SEQUENCE", "START", "END", "STRAND", "GENE", 
+                 "COVERAGE", "COVERAGE_MAP", "GAPS", "%COVERAGE", 
+                 "%IDENTITY", "DATABASE", "ACCESSION", "PRODUCT", "RESISTANCE")
+
+# Loop through each file and read it into a data frame
+for (file in file_list) {
+  # Check if the file is not empty
+  if (file.info(file)$size > 0) {
+    # Try to read the file and skip if there's an error
+    try({
+      df <- read.table(file, header = TRUE, sep = "\t", fill = TRUE, comment.char = "", stringsAsFactors = FALSE)
+      
+      # Ensure that we have at least the expected number of columns (to avoid NAs)
+      if (ncol(df) >= length(common_cols)) {
+        # Subset the dataframe to keep only the expected columns, or add missing ones
+        colnames(df) <- common_cols[1:ncol(df)]
+        missing_cols <- setdiff(common_cols, colnames(df))
+        
+        # Add missing columns with NA values if necessary
+        if (length(missing_cols) > 0) {
+          df[missing_cols] <- NA
+        }
+        
+        # Reorder columns to match the common structure
+        df <- df[, common_cols]
+        
+        # Store each valid data frame in the list
+        df_list[[file]] <- df
+      } else {
+        cat("Skipping file due to insufficient columns:", file, "\n")
+      }
+    }, silent = TRUE)
+  } else {
+    cat("Skipping empty file:", file, "\n")
+  }
+}
+
+# Combine all valid data frames into one
+final_df <- do.call(rbind, df_list)
+
+# Optionally, you can write the combined dataframe to a new file
+write.csv(final_df, "merged_summary.csv", row.names = TRUE)
+
+# Print the combined data frame to check
+print(final_df)
+
+```
+
+
+```{r}
+# Extract genome IDs from the FILE column
+final_df$GENOME_ID <- gsub(".*(ERR[0-9]+).*", "\\1", final_df$FILE)
+
+# Define genome ID ranges for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455))
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850))
+
+# Create a mapping dataframe
+country_mapping <- data.frame(
+  GENOME_ID = c(uganda_ids, kenya_ids, tanzania_ids),
+  COUNTRY = c(
+    rep("Uganda", length(uganda_ids)),
+    rep("Kenya", length(kenya_ids)),
+    rep("Tanzania", length(tanzania_ids))
+  )
+)
+
+# Merge country information into final_df
+final_df <- merge(final_df, country_mapping, by = "GENOME_ID", all.x = TRUE)
+
+# View the updated dataframe
+head(final_df)
+```
+
+
+
+
+```{r}
+# Set working directory
+setwd("D:/mrsa/abricate/Virulence/")
+
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(viridis)  # For color palette
+
+# Count occurrences of each resistance type for each gene
+resistance_counts <- final_df %>%
+  group_by(GENE, PRODUCT, ACCESSION) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Summing the counts for each GENE across different RESISTANCE types
+gene_totals <- resistance_counts %>%
+  group_by(GENE) %>%
+  summarise(total_count = sum(count), .groups = 'drop') %>%
+  arrange(desc(total_count))  # Sort by total counts
+
+# Calculate overall total counts for percentage calculation
+overall_total <- sum(gene_totals$total_count)
+
+# Calculate percentages
+gene_totals <- gene_totals %>%
+  mutate(percentage = (total_count / overall_total) * 100)
+
+# Get the top 20 genes with the highest overall percentages
+top_gene_totals <- gene_totals %>%
+  slice_head(n = 20)  # Select the top 20 genes
+
+# Plotting the top 20 genes with percentages
+q <- ggplot(top_gene_totals, aes(x = reorder(GENE, percentage), y = percentage)) +
+  geom_bar(stat = "identity", fill = viridis(1), color = "black") +  # Add border color to bars
+  
+  # Add labels for percentages with adjustment
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), 
+            vjust = -0.5, size = 4, color = "black") +  # Adjust the label to show percentage
+  
+  theme_light(base_size = 15) +  # Use a light theme
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 12),  # Rotate x-axis text and adjust size
+    axis.text.y = element_text(size = 12),  # Adjust y-axis text size
+    axis.title.x = element_text(size = 14),  # Adjust x-axis title size
+    axis.title.y = element_text(size = 14),  # Adjust y-axis title size
+    plot.title = element_text(size = 16, face = "bold"),  # Title customization
+    plot.subtitle = element_text(size = 12, face = "italic"),  # Subtitle customization
+    legend.position = "none",  # No legend needed since we're showing totals
+    panel.grid.major = element_line(color = "grey80"),  # Major grid line color
+    panel.grid.minor = element_blank()  # Remove minor grid lines
+  ) + 
+  labs(
+    title = "Top 20 S.aureus Virulent Genes in East Africa",
+    subtitle = "",
+    x = "Genes",
+    y = "(%)"
+  ) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +  # Format y-axis as percentage
+  ylim(0, max(top_gene_totals$percentage) * 1.1)  # Set y-axis limits for better visualization
+
+# Save the plot as a high-resolution image
+ggsave("top_20_gene_percentages_plot_improved.png", plot = q, width = 10, height = 6, dpi = 300)
+
+# Print the plot
+print(q)
+
+# Save data as CSV
+write.csv(top_gene_totals, file = "top_gene_percentages.csv", row.names = FALSE)
+write.csv(resistance_counts, file = "amr.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Count occurrences and calculate total percentage per accession
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  ungroup() %>%
+  mutate(Total_Count = sum(Count),  # Total count for percentage conversion
+         Percentage = (Count / Total_Count) * 100)  # Convert to percentage
+
+# Select the top 20 most abundant accessions across all countries
+top_20_accessions <- gene_country_summary %>%
+  group_by(GENE) %>%
+  summarise(Total_Abundance = sum(Count), .groups = 'drop') %>%
+  arrange(desc(Total_Abundance)) %>%
+  slice_head(n = 20) %>%
+  pull(GENE)
+
+# Filter data for only the top 20 accessions
+gene_top_20 <- gene_country_summary %>%
+  filter(GENE %in% top_20_accessions)
+
+# Plot the top 20 plasmid genes as percentages
+p <-ggplot(gene_top_20, aes(x = reorder(GENE, -Percentage), y = Percentage, fill = COUNTRY)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +  # Adjust bar width and spacing
+  
+  scale_fill_brewer(palette = "Set2") +  # Use colorblind-friendly palette
+  labs(title = "Top 20 Virulence Gene Distributions by Country",
+       x = "Virulence Gene",
+       y = "Percentage (%)",
+       fill = "Country") +
+  theme_minimal(base_size = 14) +  # Use clean minimal theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Improve x-axis readability
+        legend.position = "top",  # Move legend to the top
+        plot.title = element_text(face = "bold", hjust = 0.5))  # Center and bold title
+ggsave("Result_virulence/top_20_virulence_gene_distributions.jpg", plot = p, width = 10, height = 6, dpi = 600)
+print(p)
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(RColorBrewer)
+
+# Remove metadata from genes using regex
+final_df$GENE <- gsub("\t.*", "", final_df$GENE)
+
+# Create output directory for high-quality plots
+output_dir <- "Result_virulence/virulence_Gene_PieCharts"
+if (!dir.exists(output_dir)) dir.create(output_dir)
+
+# Summarize AMR gene counts per country
+amr_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = "drop")
+
+# Get a unique list of genes and countries
+unique_genes <- unique(amr_summary$GENE)
+countries <- unique(amr_summary$COUNTRY)
+
+# Generate a distinct color palette for all genes
+num_genes <- length(unique_genes)
+color_palette <- colorRampPalette(brewer.pal(12, "Set3"))(num_genes)  # Expands beyond 12 colors
+gene_colors <- setNames(color_palette, unique_genes)  # Ensure consistent colors across plots
+
+# Loop through each country and generate a pie chart
+for (country in countries) {
+  
+  # Filter data for the specific country
+  country_data <- amr_summary %>% filter(COUNTRY == country)
+  
+  # Generate the pie chart
+  p <- ggplot(country_data, aes(x = "", y = Count, fill = GENE)) +
+    geom_bar(stat = "identity", width = 1) +
+    coord_polar(theta = "y") +
+    theme_void() + # Remove background
+    labs(title = paste("Virulence Gene Abundance in", country), fill = "Virulence Gene") +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+      legend.title = element_text(size = 12, face = "bold"),
+      legend.text = element_text(size = 10)
+    ) +
+    scale_fill_manual(values = gene_colors)  # Apply dynamically generated colors
+
+  # Save the plot in high resolution
+  ggsave(
+    filename = file.path(output_dir, paste0("Virulence_Genes_", country, ".jpg")),
+    plot = p,
+    width = 12, height = 10, dpi = 600
+  )
+}
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(ggpubr)
+
+# Check if COUNTRY is a factor
+amr_summary$COUNTRY <- as.factor(amr_summary$COUNTRY)
+
+# Summarize AMR gene counts per country
+amr_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = "drop")
+
+
+# Convert 'COUNTRY' column to a factor to ensure it's treated as categorical
+amr_summary$COUNTRY <- as.factor(amr_summary$COUNTRY)
+
+# Create a boxplot to visualize AMR gene abundance by country
+boxplot <- ggplot(amr_summary, aes(x = COUNTRY, y = Count, fill = COUNTRY)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.6) +  # Add boxplot without outliers for better readability
+  labs(title = "Virulence Gene Abundance by Country",
+       x = "Country",
+       y = "Virulence Gene Count") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    axis.title = element_text(size = 12, face = "bold"),
+    axis.text = element_text(size = 10),
+    legend.position = "none"
+  )
+
+# Add statistical significance annotations for Kruskal-Wallis test
+boxplot <- boxplot + stat_compare_means(
+  method = "kruskal.test",  # Use Kruskal-Wallis test for non-parametric data
+  label = "p.signif",       # Show significance as asterisks
+  label.x = 1.5,            # Adjust label position on the x-axis
+  label.y = max(amr_summary$Count) * 1.1  # Place label above the plot, adjust based on your data
+)
+
+# Add pairwise comparisons with asterisks (you can modify the groups based on your data)
+boxplot <- boxplot + stat_compare_means(
+  comparisons = list(c("Tanzania", "Kenya"), c("Tanzania", "Uganda"), c("Kenya", "Uganda")),
+  method = "wilcox.test",  # Use Wilcoxon test for pairwise comparisons
+  label = "p.signif",      # Show significance as asterisks
+  tip.length = 0.01        # Adjust the length of the comparison lines
+)
+
+# Display the plot
+print(boxplot)
+
+# Save the plot as a high-quality image
+ggsave("Result_virulence/Virulence_gene_abundance_boxplot.png", boxplot, width = 8, height = 6, dpi = 600, bg = "white")
+
+```
+
+```{r}
+# Summarize the frequency and percentage of each plasmid replicon (GENE)
+plasmid_summary <- final_df %>%
+  group_by(GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  mutate(Percentage = (Count / sum(Count)) * 100)
+
+# Sort by frequency in descending order
+virulence_summary <- plasmid_summary[order(-plasmid_summary$Count), ]
+
+# View the summary
+print(virulence_summary)
+write.csv("Result_virulence/virulence_genes.csv", row.names = TRUE )
+```
+
+```{r}
+# Load required libraries
+library(tidyverse)
+
+# STEP 1: Create presence/absence matrix
+presence_matrix <- final_df %>%
+  select(GENOME_ID, GENE) %>%
+  distinct() %>%
+  mutate(present = 1) %>%
+  pivot_wider(names_from = GENE, values_from = present, values_fill = 0)
+
+# Extract gene columns only
+gene_matrix <- presence_matrix %>% column_to_rownames("GENOME_ID")
+
+# STEP 2 & 3: Run Fisher’s Exact Test for all gene pairs
+gene_names <- colnames(gene_matrix)
+results <- list()
+
+for (i in 1:(length(gene_names)-1)) {
+  for (j in (i+1):length(gene_names)) {
+    gene1 <- gene_names[i]
+    gene2 <- gene_names[j]
+    
+    tab <- table(gene_matrix[[gene1]], gene_matrix[[gene2]])
+    
+    if (all(dim(tab) == c(2,2))) {
+      fisher <- fisher.test(tab)
+      
+      results[[length(results)+1]] <- data.frame(
+        gene1 = gene1,
+        gene2 = gene2,
+        p_value = fisher$p.value,
+        odds_ratio = fisher$estimate
+      )
+    }
+  }
+}
+
+# Combine all results
+fisher_df <- bind_rows(results)
+
+# STEP 4: Filter for significant pairs (e.g., p < 0.001)
+sig_pairs <- fisher_df %>%
+  filter(p_value < 0.001 & odds_ratio > 1) %>% 
+  arrange(p_value)
+
+# View top co-occurring gene pairs
+print(sig_pairs)
+write.csv(sig_pairs, "virulence_networks/network.csv")
+```
+
+```{r}
+# Load required packages
+library(tidyverse)
+library(igraph)
+library(ggraph)
+library(reshape2)
+library(psych) # For Fisher's exact tests
+
+# Prepare binary virulence gene matrix
+binary_matrix <- final_df %>%
+  filter(!is.na(GENE)) %>%
+  select(GENOME_ID, GENE) %>%
+  distinct() %>% # Remove duplicates
+  mutate(present = 1) %>%
+  pivot_wider(names_from = GENE, values_from = present, values_fill = 0) %>%
+  column_to_rownames("GENOME_ID")
+
+# Calculate co-occurrence using Fisher's exact tests
+cooccur <- function(gene1, gene2) {
+  cont_table <- table(binary_matrix[,gene1], binary_matrix[,gene2])
+  test <- fisher.test(cont_table)
+  return(data.frame(gene1, gene2, 
+                   OR = test$estimate, 
+                   p.value = test$p.value))
+}
+
+# Get all unique gene pairs
+gene_pairs <- combn(colnames(binary_matrix), 2, simplify = FALSE)
+
+# Calculate co-occurrence for all pairs (this may take time for large datasets)
+cooccur_results <- map_dfr(gene_pairs, ~cooccur(.x[1], .x[2]))
+
+# Filter significant associations (adjust p-value cutoff as needed)
+sig_edges <- cooccur_results %>%
+  filter(p.value < 0.001) %>%
+  mutate(association = case_when(
+    OR > 1 ~ "Positive",
+    OR < 1 ~ "Negative"
+  ))
+
+# Create network graph
+net_graph <- graph_from_data_frame(
+  d = sig_edges,
+  directed = FALSE,
+  vertices = data.frame(name = colnames(binary_matrix))
+)
+
+# Set vertex attributes
+V(net_graph)$degree <- degree(net_graph)
+V(net_graph)$cluster <- cluster_louvain(net_graph)$membership
+
+# Visualize the network
+set.seed(123) # For reproducibility
+ggraph(net_graph, layout = "fr") + 
+  geom_edge_link(
+    aes(edge_width = OR, color = association),
+    arrow = NULL, 
+    end_cap = circle(3, 'mm')
+  ) +
+  geom_node_point(
+    aes(size = degree, color = as.factor(cluster)),
+    alpha = 0.8
+  ) +
+  geom_node_text(
+    aes(label = name, filter = degree > quantile(degree, 0.75)),
+    repel = TRUE,
+    size = 3
+  ) +
+  scale_edge_width_continuous(range = c(0.5, 3)) +
+  scale_color_viridis_d() +
+  theme_void() +
+  labs(
+    title = "Virulence Gene Co-occurrence Network",
+    subtitle = "Edges show significant associations (Fisher's exact test, p < 0.001)",
+    edge_width = "Odds Ratio",
+    color = "Cluster"
+  )
+
+# Save the plot
+ggsave("virulence_cooccurrence_network.pdf", width = 12, height = 10)
+
+# For your specific clusters of interest:
+# Extract subnetwork for PVL-associated genes
+pvl_genes <- c("lukF-PV", "hlgB", "hlgC")
+pvl_subnet <- induced_subgraph(net_graph, vids = pvl_genes)
+
+# Extract subnetwork for biofilm-associated genes
+biofilm_genes <- c("icaD", "aur")
+biofilm_subnet <- induced_subgraph(net_graph, vids = biofilm_genes)
+
+# Extract subnetwork for tissue invasion genes
+invasion_genes <- c("hysA", "sspC")
+invasion_subnet <- induced_subgraph(net_graph, vids = invasion_genes)
+
+
+```
+
+
+```{r}
+# Load libraries
+library(igraph)
+library(tidygraph)
+library(ggraph)
+library(ggplot2)
+library(scales)
+
+# Step 1: Remove rows with Inf odds ratios for plotting
+edges_plot <- edges[is.finite(edges$odds_ratio), ]
+
+# Step 2: Build the graph
+graph <- graph_from_data_frame(edges_plot, directed = FALSE)
+
+# Optional: calculate -log10(p-value) for edge color intensity
+E(graph)$log_p <- -log10(edges_plot$p_value)
+
+# Set edge weights and width
+E(graph)$weight <- edges_plot$odds_ratio
+
+# Step 3: Convert to tidygraph
+graph_tbl <- as_tbl_graph(graph) %>%
+  mutate(degree = centrality_degree())
+
+# Optional: Color genes based on known clusters (you can customize these)
+graph_tbl <- graph_tbl %>%
+  activate(nodes) %>%
+  mutate(group = case_when(
+    name %in% c("lukF-PV", "hlgCB", "hlgB", "hlgC") ~ "Cytotoxicity (PVL)",
+    name %in% c("icaD", "aur") ~ "Biofilm",
+    name %in% c("hysA", "sspC") ~ "Tissue Invasion",
+    TRUE ~ "Other"
+  ))
+
+
+# Convert node groups to tidygraph
+graph_tbl <- graph_tbl %>%
+  activate(nodes) %>%
+  mutate(group = V(graph)$group)
+
+# Step 4: Plot the network
+set.seed(42)  # for reproducibility
+ggraph(graph_tbl, layout = "fr") +
+  geom_edge_link(aes(edge_width = weight, edge_alpha = log_p), color = "grey40") +
+  scale_edge_width(range = c(0.2, 2), guide = "none") +
+  scale_edge_alpha(range = c(0.1, 0.9), guide = "none") +
+  geom_node_point(aes(size = degree, color = group), alpha = 0.8) +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3.5, max.overlaps = 30) +
+  scale_color_manual(values = c(
+    "Cytotoxicity (PVL)" = "firebrick",
+    "Biofilm" = "darkgreen",
+    "Tissue Invasion" = "steelblue",
+    "Other" = "grey50"
+  )) +
+  scale_size_continuous(range = c(3, 10)) +
+  theme_void() +
+  labs(title = "Co-occurrence Network of Virulence Genes",
+       subtitle = "Edge width ∝ odds ratio; Edge alpha ∝ -log10(p-value)",
+       color = "Functional Group")
+
+```
+
+
+
+
+
+
+## Plasmids
+```{r}
+setwd("D:/mrsa/abricate/Plasmids//")
+# List all summary.txt files in the directory
+file_list <- list.files(pattern = "summary\\.txt$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+df_list <- list()
+
+# Define the expected column names
+common_cols <- c("FILE", "SEQUENCE", "START", "END", "STRAND", "GENE", 
+                 "COVERAGE", "COVERAGE_MAP", "GAPS", "%COVERAGE", 
+                 "%IDENTITY", "DATABASE", "ACCESSION", "PRODUCT")
+
+# Loop through each file and read it into a data frame
+for (file in file_list) {
+  # Check if the file is not empty
+  if (file.info(file)$size > 0) {
+    # Try to read the file and skip if there's an error
+    try({
+      df <- read.table(file, header = TRUE, sep = "\t", fill = TRUE, comment.char = "", stringsAsFactors = FALSE)
+      
+      # Ensure that we have at least the expected number of columns (to avoid NAs)
+      if (ncol(df) >= length(common_cols)) {
+        # Subset the dataframe to keep only the expected columns, or add missing ones
+        colnames(df) <- common_cols[1:ncol(df)]
+        missing_cols <- setdiff(common_cols, colnames(df))
+        
+        # Add missing columns with NA values if necessary
+        if (length(missing_cols) > 0) {
+          df[missing_cols] <- NA
+        }
+        
+        # Reorder columns to match the common structure
+        df <- df[, common_cols]
+        
+        # Store each valid data frame in the list
+        df_list[[file]] <- df
+      } else {
+        cat("Skipping file due to insufficient columns:", file, "\n")
+      }
+    }, silent = TRUE)
+  } else {
+    cat("Skipping empty file:", file, "\n")
+  }
+}
+
+# Combine all valid data frames into one
+final_df <- do.call(rbind, df_list)
+
+# Optionally, you can write the combined dataframe to a new file
+write.csv(final_df, "merged_summary.csv", row.names = TRUE)
+
+# Print the combined data frame to check
+print(final_df)
+
+```
+
+```{r}
+# Extract genome IDs from the FILE column
+final_df$GENOME_ID <- gsub(".*(ERR[0-9]+).*", "\\1", final_df$FILE)
+
+# Define genome ID ranges for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455))
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850))
+
+# Create a mapping dataframe
+country_mapping <- data.frame(
+  GENOME_ID = c(uganda_ids, kenya_ids, tanzania_ids),
+  COUNTRY = c(
+    rep("Uganda", length(uganda_ids)),
+    rep("Kenya", length(kenya_ids)),
+    rep("Tanzania", length(tanzania_ids))
+  )
+)
+
+# Merge country information into final_df
+final_df <- merge(final_df, country_mapping, by = "GENOME_ID", all.x = TRUE)
+
+# View the updated dataframe
+head(final_df)
+```
+```{r}
+final_df <- final_df %>% select( GENOME_ID, GENE, ACCESSION, PRODUCT, COUNTRY)
+```
+
+```{r}
+# Count the occurrence of each gene by country
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, ACCESSION) %>%
+  summarise(Count = n(), .groups = 'drop')
+
+# View the summary
+print(gene_country_summary)
+```
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+# Count occurrences and calculate total percentage per accession
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, ACCESSION) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  ungroup() %>%
+  mutate(Total_Count = sum(Count),  # Total count for percentage conversion
+         Percentage = (Count / Total_Count) * 100)  # Convert to percentage
+
+# Select the top 20 most abundant accessions across all countries
+top_20_accessions <- gene_country_summary %>%
+  group_by(ACCESSION) %>%
+  summarise(Total_Abundance = sum(Count), .groups = 'drop') %>%
+  arrange(desc(Total_Abundance)) %>%
+  slice_head(n = 20) %>%
+  pull(ACCESSION)
+
+# Filter data for only the top 20 accessions
+gene_top_20 <- gene_country_summary %>%
+  filter(ACCESSION %in% top_20_accessions)
+
+# Create the plot
+p <- ggplot(gene_top_20, aes(x = reorder(ACCESSION, -Percentage), y = Percentage, fill = COUNTRY)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +  # Adjust bar width and spacing
+  
+  scale_fill_brewer(palette = "Set2") +  # Use colorblind-friendly palette
+  labs(title = "Top 20 Plasmid Gene Distributions by Country",
+       x = "Plasmid Accession",
+       y = "Percentage (%)",
+       fill = "Country") +
+  theme_minimal(base_size = 14) +  # Use clean minimal theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Improve x-axis readability
+        legend.position = "top",  # Move legend to the top
+        plot.title = element_text(face = "bold", hjust = 0.5))  # Center and bold title
+
+# Save the plot as a high-resolution image (600 DPI)
+ggsave("Results/top_20_plasmid_accession_distributions.jpg", plot = p, width = 10, height = 6, dpi = 600)
+
+# Print the plot to the screen
+print(p)
+
+```
+
+
+```{r}
+# Dominant replicons per country  
+country_dominance <- gene_top_20 %>%  
+  group_by(COUNTRY) %>%  
+  slice_max(Percentage, n = 3)  
+
+# Co-occurrence calculation (example for Tanzania)  
+tanzania_multi_replicon <- final_df %>%  
+  filter(COUNTRY == "Tanzania") %>%  
+  group_by(GENOME_ID) %>%  
+  summarise(N_Replicons = n_distinct(GENE)) %>%  
+  filter(N_Replicons >= 3) %>%  
+  nrow() / n_distinct(filter(final_df, COUNTRY == "Tanzania")$GENOME_ID) * 100  
+```
+
+
+```{r}
+library(igraph)
+library(ggraph)
+library(tidygraph)
+
+# Create a binary matrix of replicons per genome
+binary_matrix <- final_df %>%
+  distinct(GENOME_ID, GENE) %>%  # Remove duplicate replicons per genome
+  mutate(value = 1) %>%
+  pivot_wider(names_from = GENE, values_from = value, values_fill = 0) %>%
+  column_to_rownames("GENOME_ID")
+
+# Calculate co-occurrence (Jaccard similarity)
+co_occurrence <- as.matrix(binary_matrix) %*% t(binary_matrix)  # Dot product
+total_genomes <- rowSums(binary_matrix)
+jaccard_matrix <- co_occurrence / (outer(total_genomes, total_genomes, "+") - co_occurrence)
+
+# Convert to edge list (filter weak connections)
+edge_list <- jaccard_matrix %>%
+  as.data.frame() %>%
+  rownames_to_column("Replicon_A") %>%
+  pivot_longer(-Replicon_A, names_to = "Replicon_B", values_to = "Jaccard") %>%
+  filter(Jaccard > 0.2 & Replicon_A != Replicon_B)  # Threshold for edges
+
+# Create network graph
+network_graph <- as_tbl_graph(edge_list, directed = FALSE) %>%
+  activate(nodes) %>%
+  mutate(
+    Degree = centrality_degree(),
+    Community = as.factor(group_louvain())
+  )
+
+# Plot
+set.seed(123)  # For reproducibility
+ggraph(network_graph, layout = "fr") +  # Fruchterman-Reingold layout
+  geom_edge_link(aes(width = Jaccard, alpha = Jaccard), color = "gray50") +
+  geom_node_point(aes(size = Degree, color = Community), show.legend = TRUE) +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3) +
+  scale_edge_width(range = c(0.5, 3)) +
+  scale_size(range = c(3, 10)) +
+  labs(title = "Co-occurrence Network of Plasmid Replicons",
+       subtitle = "Edge width/opacity = Jaccard similarity; Node size = Degree") +
+  theme_graph(base_family = "sans") +
+  theme(legend.position = "bottom")
+
+ggsave("Results/plasmid_replicon_network.jpg", width = 10, height = 8, dpi = 600)
+```
+
+
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Count occurrences and calculate total percentage per accession
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  ungroup() %>%
+  mutate(Total_Count = sum(Count),  # Total count for percentage conversion
+         Percentage = (Count / Total_Count) * 100)  # Convert to percentage
+
+# Select the top 20 most abundant accessions across all countries
+top_20_accessions <- gene_country_summary %>%
+  group_by(GENE) %>%
+  summarise(Total_Abundance = sum(Count), .groups = 'drop') %>%
+  arrange(desc(Total_Abundance)) %>%
+  slice_head(n = 20) %>%
+  pull(GENE)
+
+# Filter data for only the top 20 accessions
+gene_top_20 <- gene_country_summary %>%
+  filter(GENE %in% top_20_accessions)
+
+# Plot the top 20 plasmid genes as percentages
+p <-ggplot(gene_top_20, aes(x = reorder(GENE, -Percentage), y = Percentage, fill = COUNTRY)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +  # Adjust bar width and spacing
+  
+  scale_fill_brewer(palette = "Set2") +  # Use colorblind-friendly palette
+  labs(title = "Top 20 Plasmid Gene Distributions by Country",
+       x = "Plasmid Gene",
+       y = "Percentage (%)",
+       fill = "Country") +
+  theme_minimal(base_size = 14) +  # Use clean minimal theme
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Improve x-axis readability
+        legend.position = "top",  # Move legend to the top
+        plot.title = element_text(face = "bold", hjust = 0.5))  # Center and bold title
+ggsave("Results/top_20_plasmid_gene_distributions.jpg", plot = p, width = 10, height = 6, dpi = 600)
+print(p)
+```
+
+```{r}
+# Count the occurrence of each gene by country
+gene_country_summary <- final_df %>%
+  group_by(COUNTRY, PRODUCT) %>%
+  summarise(Count = n(), .groups = 'drop')
+
+# View the summary
+print(gene_country_summary)
+```
+
+
+
+```{r}
+library(ggplot2)
+library(reshape2)
+library(pheatmap)
+library(viridis)  # Better color palette
+
+# Reshape data for heatmap
+gene_country_matrix <- dcast(gene_country_summary, PRODUCT ~ COUNTRY, value.var = "Count", fill = 0)
+
+# Convert to matrix for heatmap
+heatmap_data <- as.matrix(gene_country_matrix[, -1])  # Exclude GENE column
+rownames(heatmap_data) <- gene_country_matrix$PRODUCT  
+
+# Get top 50 most abundant genes
+top_genes <- names(sort(rowSums(heatmap_data), decreasing = TRUE)[1:50])
+heatmap_data_filtered <- heatmap_data[top_genes, ]
+
+# Scale the data by row and replace NaN values with 0
+heatmap_data_scaled <- t(scale(t(heatmap_data_filtered)))  
+heatmap_data_scaled[is.na(heatmap_data_scaled)] <- 0  
+
+# Save the heatmap as a high-resolution image (300 DPI)
+png("Results/top_50_plasmid_genes_by_country_heatmap.jpg", width = 10, height = 8, units = "in", res = 300)
+
+# Plot the heatmap
+pheatmap(heatmap_data_scaled, 
+         clustering_distance_rows = "euclidean",
+         clustering_distance_cols = "euclidean",
+         clustering_method = "complete",
+         color = viridis(100),  # New color palette
+         main = "Top 50 Plasmid Genes by Country",
+         fontsize_row = 10,  # Bigger text for better readability
+         fontsize_col = 12,
+         border_color = "white",
+         angle_col = 45)
+
+# Turn off the device to save the plot
+dev.off()
+
+
+```
+
+
+
+
+```{r}
+# Create a contingency table
+contingency_table <- table(final_df$GENE, final_df$COUNTRY)
+
+# Perform Chi-Square test
+chi_square_test <- chisq.test(contingency_table)
+print(chi_square_test)
+```
+
+```{r}
+# Filter for a specific gene (e.g., rep5a_1_repSAP001(pN315))
+specific_gene <- final_df %>% filter(GENE == "rep5a_1_repSAP001(pN315)")
+
+# Count occurrences by country
+specific_gene_summary <- specific_gene %>%
+  group_by(COUNTRY) %>%
+  summarise(Count = n(), .groups = 'drop')
+
+# Bar plot for the specific gene
+ggplot(specific_gene_summary, aes(x = COUNTRY, y = Count, fill = COUNTRY)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Distribution of rep5a_1_repSAP001(pN315) by Country",
+       x = "Country",
+       y = "Count")
+```
+
+
+
+
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(patchwork)  # For arranging multiple plots
+
+# Summarize plasmid gene distribution for each country
+country_genes <- final_df %>%
+  group_by(COUNTRY, GENE) %>%
+  summarise(Count = n(), .groups = 'drop')
+
+# Create a function to generate a pie chart for a specific country
+create_pie_chart <- function(country_data, country_name) {
+  ggplot(country_data, aes(x = "", y = Count, fill = GENE)) +
+    geom_bar(stat = "identity", width = 1, color = "white") +
+    coord_polar("y", start = 0) +
+    labs(title = paste("Plasmid Gene Distribution in", country_name),
+         fill = "Plasmid Gene") +
+    theme_void() +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+      legend.position = "right",
+      legend.text = element_text(size = 10),
+      legend.title = element_text(size = 12, face = "bold")
+    )
+}
+
+# Filter data for each country
+tanzania_data <- country_genes %>% filter(COUNTRY == "Tanzania")
+kenya_data <- country_genes %>% filter(COUNTRY == "Kenya")
+uganda_data <- country_genes %>% filter(COUNTRY == "Uganda")
+
+# Generate pie charts for each country
+tanzania_pie <- create_pie_chart(tanzania_data, "Tanzania")
+kenya_pie <- create_pie_chart(kenya_data, "Kenya")
+uganda_pie <- create_pie_chart(uganda_data, "Uganda")
+uganda_pie
+tanzania_pie
+kenya_pie
+
+# Arrange the three pie charts in a single figure
+combined_plot <- (tanzania_pie | kenya_pie | uganda_pie) +
+  plot_layout(guides = "collect")  # Combine legends
+
+
+combined_plot
+ggsave("Results/plasmid_gene_distribution_Uganda_pie_charts.jpg", uganda_pie,
+       width = 12, height = 6, dpi = 600, bg = "white")
+ggsave("Results/plasmid_gene_distribution_Kenya_pie_charts.jpg", kenya_pie,
+       width = 12, height = 6, dpi = 600, bg = "white")
+ggsave("Results/plasmid_gene_distribution_Tanzania_pie_charts.jpg", tanzania_pie,
+       width = 12, height = 6, dpi = 600, bg = "white")
+```
+
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+
+# Create the plot
+tanzania_genes <- final_df %>% filter(COUNTRY == "Kenya") %>%
+  group_by(GENE) %>%
+  summarise(Count = n(), .groups = 'drop')
+
+plot <- ggplot(tanzania_genes, aes(x = "", y = Count, fill = GENE)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  labs(title = "Plasmid Gene Distribution in Kenya") +
+  theme_void() +
+  theme(
+    legend.position = "right",   # Adjust position of the legend
+    legend.key.size = unit(0.5, "cm"),  # Reduce legend key size
+    legend.text = element_text(size = 8),  # Reduce legend text size
+    plot.margin = margin(0, 2, 0, 0, "cm")  # Adjust plot margins for better space distribution
+  )
+
+# Save the plot as a high resolution image (300 dpi)
+ggsave("Kenya_plasmid_gene_distribution.jpg", plot = plot, width = 15, height = 8, dpi = 600)
+
+# Print plot to screen as well
+print(plot)
+
+
+```
+
+
+
+```{r}
+# Create a co-occurrence matrix
+co_occurrence_matrix <- crossprod(table(final_df$GENOME_ID, final_df$GENE))
+
+# Plot the network
+library(igraph)
+
+# Convert co-occurrence matrix to a graph
+gene_network <- graph_from_adjacency_matrix(co_occurrence_matrix, mode = "undirected", weighted = TRUE)
+
+# Plot the network
+plot(gene_network, edge.width = E(gene_network)$weight,
+     vertex.label.cex = 0.8, vertex.size = 10,
+     main = "Co-occurrence Network of Plasmid Genes")
+```
+```{r}
+# Summarize the frequency and percentage of each plasmid replicon (GENE)
+plasmid_summary <- final_df %>%
+  group_by(GENE) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  mutate(Percentage = (Count / sum(Count)) * 100)
+
+# Sort by frequency in descending order
+plasmid_summary <- plasmid_summary[order(-plasmid_summary$Count), ]
+
+# View the summary
+print(plasmid_summary)
+write.csv("Results/Plasmid_genes.csv", row.names = TRUE )
+
+```
+
+
+```{r}
+# Count the number of plasmids per strain
+plasmids_per_strain <- final_df %>%
+  group_by(GENOME_ID) %>%
+  summarise(Plasmid_Count = n(), .groups = 'drop')
+
+# Find the maximum number of plasmids per strain
+max_plasmids <- max(plasmids_per_strain$Plasmid_Count)
+
+# Count how many strains have the maximum number of plasmids
+strains_with_max <- sum(plasmids_per_strain$Plasmid_Count == max_plasmids)
+
+ave_plasmids <- mean(plasmids_per_strain$Plasmid_Count)
+
+# View the results
+cat("Maximum number of plasmids per strain:", max_plasmids, "\n")
+cat("Number of strains with the maximum:", strains_with_max, "\n")
+
+ave_plasmids
+```
+
+```{r}
+# Filter strains with the maximum number of plasmids
+strains_max_plasmids <- plasmids_per_strain %>%
+  filter(Plasmid_Count == max_plasmids)
+
+# View the strains
+print(strains_max_plasmids)
+```
+
+
+
+
+
+```{r}
+setwd("D:/mrsa/abricate/Plasmids//")
+library(ggplot2)
+library(dplyr)
+library(viridis)  # For color palette
+
+# Count occurrences of each resistance type for each gene
+resistance_counts <- final_df %>%
+  group_by(GENE, ACCESSION) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Summing the counts for each GENE across different RESISTANCE types
+gene_totals <- resistance_counts %>%
+  group_by(GENE) %>%
+  summarise(total_count = sum(count), .groups = 'drop') %>%
+  arrange(desc(total_count))  # Sort by total counts
+
+# Get the top 20 genes with the highest overall counts
+top_gene_totals <- gene_totals %>%
+  slice_head(n = 20)  # Select the top 20 genes
+
+# Plotting the top 20 genes with total counts
+q <- ggplot(top_gene_totals, aes(x = reorder(GENE, total_count), y = total_count)) +
+  geom_bar(stat = "identity", fill = viridis(20)[1], width = 0.7) +  # Use viridis color
+  geom_text(aes(label = total_count), 
+            vjust = -0.5, size = 4, color = "black") +  # Improved label size and color
+  
+  theme_light(base_size = 15) +  # Use a light theme
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 12),  # Rotate x-axis text and adjust size
+    axis.text.y = element_text(size = 12),  # Adjust y-axis text size
+    axis.title.x = element_text(size = 14),  # Adjust x-axis title size
+    axis.title.y = element_text(size = 14),  # Adjust y-axis title size
+    plot.title = element_text(size = 16, face = "bold"),  # Title customization
+    plot.subtitle = element_text(size = 12, face = "italic"),  # Subtitle customization
+    legend.position = "none",  # No legend needed since we're showing totals
+    panel.grid.major = element_line(color = "grey80"),  # Major grid line color
+    panel.grid.minor = element_blank()  # Remove minor grid lines
+  ) + 
+  labs(
+    title = "S.aureus Plasmid abundance",
+    subtitle = "",
+    x = "Plasmids",
+    y = "Total Count"
+  ) +
+  ylim(0, max(top_gene_totals$total_count) * 1.1)  # Set y-axis limits for better visualization
+
+# Save the plot as a high-resolution image
+ggsave("top_20_gene_totals_plot_improved.png", plot = q, width = 10, height = 6, dpi = 300)
+
+
+
+
+# Print the plot
+print(q)
+
+# Save data as CSV
+write.csv(top_gene_totals, file = "top_gene_totals.csv", row.names = FALSE)
+write.csv(resistance_counts, file = "amr.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(viridis)
+
+# Count occurrences of each resistance type for each gene
+resistance_counts <- final_df %>%
+  group_by(GENE, ACCESSION) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Summing the counts for each GENE
+gene_totals <- resistance_counts %>%
+  group_by(GENE) %>%
+  summarise(total_count = sum(count), .groups = 'drop') %>%
+  arrange(desc(total_count))
+
+# Calculate percentages
+gene_totals <- gene_totals %>%
+  mutate(percentage = (total_count / sum(total_count)) * 100)
+
+# Get the top 20 genes based on percentage
+top_gene_totals <- gene_totals %>%
+  slice_head(n = 20)
+
+# Plot the top 20 genes with percentages
+q <- ggplot(top_gene_totals, aes(x = reorder(GENE, percentage), y = percentage)) +
+  geom_bar(stat = "identity", fill = viridis(20, option = "plasma")[10], width = 0.7) +
+  
+  # Add percentage labels
+  geom_text(aes(label = sprintf("%.1f%%", percentage)), 
+            vjust = -0.5, size = 5, color = "black") +
+  
+  theme_minimal(base_size = 16) +  # Use minimal theme for a clean look
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 14),
+    axis.text.y = element_text(size = 14),
+    axis.title.x = element_text(size = 16, face = "bold"),
+    axis.title.y = element_text(size = 16, face = "bold"),
+    plot.title = element_text(size = 18, face = "bold"),
+    panel.grid.major = element_line(color = "grey85"),
+    panel.grid.minor = element_blank()
+  ) +
+  
+  labs(
+    title = "S. aureus Plasmid Abundance",
+    x = "Plasmid Genes",
+    y = "Percentage (%)"
+  ) +
+  
+  ylim(0, max(top_gene_totals$percentage) * 1.1)  # Adjust y-axis for better spacing
+
+# Save as a high-resolution image
+ggsave("Results/top_20_gene_percentage_plot.png", plot = q, width = 10, height = 6, dpi = 600)
+
+# Print the plot
+print(q)
+
+# Save processed data
+write.csv(top_gene_totals, file = "top_gene_percentages.csv", row.names = FALSE)
+write.csv(resistance_counts, file = "amr.csv", row.names = FALSE)
+
+```
+
+
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+library(ggpubr)  # For adding statistical annotations to plots
+
+# Summarize plasmid abundance (count) per strain
+plasmid_abundance <- final_df %>%
+  group_by(GENOME_ID, COUNTRY) %>%
+  summarise(Plasmid_Count = n(), .groups = 'drop')
+
+# View the summarized data
+print(plasmid_abundance)
+```
+
+```{r}
+# Check normality assumption (optional)
+shapiro.test(plasmid_abundance$Plasmid_Count)  # If p > 0.05, data is normally distributed
+
+# Perform ANOVA
+anova_result <- aov(Plasmid_Count ~ COUNTRY, data = plasmid_abundance)
+summary(anova_result)
+
+# Post-hoc test (Tukey's HSD) to identify pairwise differences
+tukey_result <- TukeyHSD(anova_result)
+print(tukey_result)
+```
+```{r}
+# Perform Kruskal-Wallis test
+kruskal_result <- kruskal.test(Plasmid_Count ~ COUNTRY, data = plasmid_abundance)
+print(kruskal_result)
+
+# Post-hoc test (Dunn's test) to identify pairwise differences
+library(dunn.test)
+
+dunn_result <- dunn.test(plasmid_abundance$Plasmid_Count, plasmid_abundance$COUNTRY, method = "bonferroni")
+print(dunn_result)
+```
+
+
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(ggpubr)
+
+# Create a boxplot to visualize plasmid abundance by country
+boxplot <- ggplot(plasmid_abundance, aes(x = COUNTRY, y = Plasmid_Count, fill = COUNTRY)) +
+  geom_boxplot() +
+  labs(title = "Plasmid Abundance by Country",
+       x = "Country",
+       y = "Plasmid Count per Strain") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    axis.title = element_text(size = 12, face = "bold"),
+    axis.text = element_text(size = 10),
+    legend.position = "none"
+  )
+
+# Add statistical significance annotations (asterisks)
+boxplot <- boxplot + stat_compare_means(
+  method = "kruskal.test",  # Use "anova" if ANOVA was performed
+  label = "p.signif",       # Show significance as asterisks
+  label.x = 1.5,            # Adjust label position
+  label.y = max(plasmid_abundance$Plasmid_Count) * 1.1  # Place label above the plot
+)
+
+# Add pairwise comparisons with asterisks
+boxplot <- boxplot + stat_compare_means(
+  comparisons = list(c("Tanzania", "Kenya"), c("Tanzania", "Uganda"), c("Kenya", "Uganda")),
+  method = "wilcox.test",  # Use "t.test" if ANOVA was performed
+  label = "p.signif",      # Show significance as asterisks
+  tip.length = 0.01        # Adjust the length of comparison lines
+)
+
+# Display the plot
+print(boxplot)
+
+# Save the plot as a high-quality image
+ggsave("Results/plasmid_abundance_boxplot.png", boxplot, width = 8, height = 6, dpi = 600, bg = "white")
+```
+
+
+
+## MLST
+###Read in files
+```{r}
+library(readr)      # Ensure the readr library is loaded
+library(dplyr)      # Ensure dplyr is available for data manipulation
+library(tidyr)      # Ensure tidyr is loaded for the separate function
+
+setwd("../MLST")    # Set the working directory
+
+# List all CSV files in the directory
+csv_files <- list.files(pattern = "*.csv", full.names = TRUE)  # Use full.names to get complete paths
+
+# Read and combine all tab-delimited CSV files into one dataframe
+combined_df <- csv_files %>%
+  lapply(read_delim, delim = "\t", col_names = FALSE) %>%  # Read tab-delimited files
+  bind_rows()                                              # Combine all dataframes into one
+
+# View the combined dataframe (just to verify it again)
+print(combined_df)
+
+# Now separate the single column into multiple columns
+# Assuming your combined data is in the first column (which is the default if you read with col_names = FALSE)
+combined_df <- combined_df %>%
+  separate(X1, 
+           into = c("path", "species", "unknown", "arcC", "aroE", "glpF", "gmk", "pta", "tpi", "yqiL"),
+           sep = ",")  # Use comma as the separator
+
+# View the separated dataframe
+print(combined_df)
+
+
+```
+
+```{r}
+
+# Step 1: Rename the `unknown` column to `ST-type`
+combined_df <- combined_df %>%
+  rename(`ST-type` = unknown)
+
+# Step 2: Extract the ID (ERRxxxxxxx) from the `path` column
+combined_df <- combined_df %>%
+  mutate(path = str_extract(path, "ERR\\d+"))
+# Replace '-' in the ST-type column with 'Unidentified'
+combined_df <- combined_df %>%
+  mutate(`species` = ifelse(`species` == "-", "Unidentified", `species`))
+# Classify the Origin based on the first six digits in the path column
+combined_df <- combined_df %>%
+  mutate(Origin = case_when(
+    grepl("^ERR469", path) ~ "Uganda",  # Any row with "ERR469" is Uganda
+    grepl("^ERR315|^ERR321|^ERR176|^ERR179|^ERR243", path) ~ "Kenya",  # Any of these prefixes are Kenya
+    grepl("^ERR129|^ERR125", path) ~ "Tanzania",  # Any of these prefixes are Tanzania
+    TRUE ~ "Unknown"  # Default to "Unknown" if no matches
+  ))
+
+# Check and print the updated dataframe
+print(combined_df, n = 10)
+# Now, `combined_df` has the `ST-type` column and the `path` column with only the sample IDs.
+
+```
+## Figure 2
+```{r}
+# Load required libraries
+library(dplyr)
+library(ggplot2)
+
+# Step 1: Create a summary data frame to count occurrences of each species by Origin
+species_origin_counts <- combined_df %>%
+  group_by(species, Origin) %>%
+  summarize(count = n(), .groups = 'drop')
+
+# Step 2: Create an enhanced grouped bar plot
+p <- ggplot(species_origin_counts, aes(x = species, y = count, fill = Origin)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_minimal(base_size = 15) +  # Increase base font size for better readability
+  labs(title = "Counts of Different Species by Origin",
+       x = "Species",
+       y = "Count") +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),  # Rotate x-axis labels
+    legend.title = element_text(size = 12),  # Increase legend title size
+    legend.text = element_text(size = 10),    # Increase legend text size
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold")  # Center and bold the title
+  ) +
+  scale_fill_brewer(palette = "Set1")  # Use a color palette for better differentiation
+
+# Step 3: Save the plot as a high-resolution image
+ggsave("species_origin_counts_plot.png", plot = p, width = 10, height = 6, dpi = 300)
+p
+
+
+```
+
+```{r}
+
+# Step 1: Filter rows where species is NOT 'saureus' and store them in a new dataframe
+non_saureus_df <- combined_df %>%
+  filter(species != 'saureus')
+
+# View the non-saureus dataframe
+non_saureus_df
+
+```
+
+```{r}
+# Step 1: Remove rows where species is not 'saureus' from combined_df
+combined_df <- combined_df %>%
+  filter(species == 'saureus')
+
+# View the updated combined_df with only 'saureus' species
+combined_df
+
+
+# Step 1: Create a new dataframe by extracting only the digits from columns 4 to 10
+combined_df<- combined_df %>%
+  mutate(across(arcC:yqiL, ~str_extract(., "\\d+")))
+# Step 1: Replace "-" in the ST-type column with "Unique"
+combined_df <- combined_df%>%
+  mutate(`ST-type` = ifelse(`ST-type` == "-", "Unique", `ST-type`))
+
+# Step 2: Convert columns arcC to yqiL to factors (ordinal data)
+combined_df<- combined_df %>%
+  mutate(across(arcC:yqiL, as.factor))
+
+rownames(combined_df)<- combined_df$path
+combined_df <- as.data.frame(combined_df)
+
+
+# View the cleaned dataframe
+head(combined_df)
+
+```
+
+
+
+##MLST bar plot
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(viridis)
+
+# Reorder 'ST-type' based on count
+combined_df$`ST-type` <- factor(combined_df$`ST-type`, levels = rev(names(sort(table(combined_df$`ST-type`)))))
+levels(combined_df$`ST-type`)
+# Improved bar plot with count labels, color palette, and better axis handling
+st_type_plot <- ggplot(combined_df, aes(x = reorder(`ST-type`, table(`ST-type`)[`ST-type`]), fill = species)) +
+  geom_bar(stat = "count", position = "dodge") +  # Dodge position for separated bars by species
+  geom_text(stat = "count", aes(label = ..count..), vjust = -0.3, size = 3.5, position = position_dodge(width = 0.9)) +  # Add count labels
+  scale_fill_viridis(discrete = TRUE, option = "D") +  # Viridis color palette for fill
+  theme_light(base_size = 15) +  # Use light theme
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 10),  # Rotate x-axis text for better fit
+    axis.text.y = element_text(size = 10),  # Adjust y-axis text size
+    legend.text = element_text(size = 8),  # Adjust legend text size
+    legend.title = element_text(size = 10),  # Adjust legend title size
+    legend.position = "bottom"  # Position legend at the bottom
+  ) +
+  labs(
+    title = "Distribution of ST-types in *Staphylococcus aureus*",  # Title with species in italics
+    x = "ST-type",  # X-axis label
+    y = "Count"  # Y-axis label
+  )
+
+# Save the plot with high resolution
+ggsave("ST_type_distribution_enhanced.png", plot = st_type_plot, dpi = 300, width = 12, height = 7)
+
+```
+
+## Statistics
+```{r}
+# Create a contingency table of ST-type by Origin
+contingency_table <- table(combined_df$`ST-type`, combined_df$Origin)
+
+# View the contingency table
+print(contingency_table)
+contig_table <- as.data.frame(contingency_table)
+# Load the necessary libraries
+library(ggplot2)
+
+# Assuming your data frame is already named contig_table
+# Create the plot
+q <- ggplot(contig_table, aes(x = Var1, y = Freq, fill = Var2)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("Kenya" = "#1f77b4", "Tanzania" = "#ff7f0e", "Uganda" = "#2ca02c")) +
+  labs(title = "Frequency of Var1 across Different Origins",
+       x = "Var1",
+       y = "Frequency",
+       fill = "Origin") +
+  theme_minimal(base_size = 15) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  coord_cartesian(ylim = c(0, max(contig_table$Freq) + 10))
+
+# Save the plot as a high-resolution image
+#ggsave("frequency_plot.png", width = 12, height = 8, dpi = 300)
+q
+```
+
+```{r}
+# Perform chi-squared test on the contingency table
+chi_test <- chisq.test(contingency_table)
+
+# View the chi-squared test result
+print(chi_test)
+
+```
+```{r}
+# Perform Fisher's exact test with Monte Carlo simulation
+fisher_test <- fisher.test(contingency_table, simulate.p.value = TRUE, B = 10000)
+
+# View the Fisher's test result
+print(fisher_test)
+
+```
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+library(broom)
+
+# Ensure the Origin column is a factor
+combined_df$Origin <- as.factor(combined_df$Origin)
+
+# Create a contingency table for ST-type and Origin
+contingency_table <- table(combined_df$`ST-type`, combined_df$Origin)
+
+# Print the contingency table to inspect its structure
+print(contingency_table)
+
+# Check unique levels in Origin
+origins <- levels(combined_df$Origin)
+
+# Perform pairwise Fisher's Exact Test with simulation
+if (length(origins) >= 2) {
+  pairwise_results <- combn(origins, 2, function(x) {
+    # Extract the relevant data from the contingency table
+    test <- fisher.test(contingency_table[, x], alternative = "two.sided", simulate.p.value = TRUE)
+    data.frame(Origin1 = x[1], Origin2 = x[2], p_value = test$p.value)
+  }, simplify = FALSE)
+  
+  # Combine results into a data frame
+  pairwise_results_df <- bind_rows(pairwise_results)
+  
+  # Apply Bonferroni correction
+  pairwise_results_df <- pairwise_results_df %>%
+    mutate(p_adjusted = p.adjust(p_value, method = "bonferroni"))
+  
+  # Display the pairwise results
+  print(pairwise_results_df)
+} else {
+  print("Not enough unique origins for pairwise comparison.")
+}
+
+
+```
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(reshape2)
+library(RColorBrewer)
+
+# Ensure your pairwise results are in a wide format matrix for visualization
+pairwise_results_matrix <- reshape2::acast(pairwise_results_df, Origin1 ~ Origin2, value.var = "p_adjusted")
+
+# Convert the matrix to a data frame for ggplot2
+melted_results <- melt(pairwise_results_matrix, na.rm = TRUE)
+
+# Add significance levels to the results
+melted_results$significance <- cut(melted_results$value, 
+                                   breaks = c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                   labels = c("***", "**", "*", "ns"))
+
+# Create a heatmap with ggplot2
+B <-ggplot(melted_results, aes(Var1, Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0.05, limit = c(0, 1), space = "Lab", 
+                       name="p-adjusted") +
+  geom_text(aes(label = significance), color = "black", size = 4) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   size = 12, hjust = 1)) +
+  labs(x = "", y = "", title = "") +
+  coord_fixed()
+# Save the plot with high resolution
+ggsave("pairwise_fishers_test_heatmap.png", B,dpi = 300, width = 8, height = 6)
+
+```
+
+
+
+```{r}
+# Load required libraries
+library(ggplot2)
+
+# Melt the contingency table for ggplot
+contingency_melted <- melt(contingency_table)
+
+# Plot the heatmap without text inside the tiles and with a light background
+heatmap_plot <- ggplot(contingency_melted, aes(Var1, Var2, fill = value)) +
+  geom_tile(color = "white", size = 0.8) +  # Add white borders for separation
+  scale_fill_distiller(palette = "Spectral", name = "Count", direction = 1) +  # Use a diverging color palette for better contrast
+  labs(x = "ST-type", y = "", title = "") +
+  theme_minimal(base_size = 14) +  # Minimal theme with base font size for clearer labels
+  theme(
+    panel.background = element_rect(fill = "white", color = NA),  # Set background to white
+    plot.background = element_rect(fill = "white", color = NA),   # Ensure the plot background is white
+    axis.text.x = element_text(angle = 90, hjust = 1, size = 12, face = "bold"),  # Bold x-axis labels for readability
+    axis.text.y = element_text(size = 12, face = "bold"),  # Bold y-axis labels
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),  # Center and enlarge title
+    axis.title.x = element_text(size = 14),  # Adjust x-axis title size
+    legend.position = "right",  # Position legend on the right
+    legend.text = element_text(size = 10),  # Adjust legend text size
+    legend.title = element_text(size = 12)  # Adjust legend title size
+  )
+
+# Save the plot as a high-resolution PNG file with a white background
+ggsave("heatmap_STtype_vs_Origin.png", plot = heatmap_plot, width = 10, height = 8, dpi = 300, bg = "white")
+
+```
+
+```{r}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Create a summary data frame for counts of ST types by origin
+summary_df <- combined_df %>%
+  group_by(Origin, `ST-type`) %>%
+  summarise(count = n(), .groups = 'drop')
+
+# Filter ST-types that have a count above 10 across all origins
+filtered_df <- summary_df %>%
+  group_by(`ST-type`) %>%
+  filter(sum(count) > 10) %>%
+  ungroup()
+
+# Create the improved bar plot
+bar_plot <- ggplot(filtered_df, aes(x = `ST-type`, y = count, fill = Origin)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +  # Adjust bar and dodge width
+  labs(title = "Counts of ST Types by Origin",
+       x = "ST Type",
+       y = "Count") +
+  scale_fill_brewer(palette = "Set1") +  # Use a clean color palette
+  theme_minimal(base_size = 15) +  # Increase base font size for readability
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
+        legend.title = element_blank(),
+        panel.grid.major = element_line(color = "grey90"),
+        panel.grid.minor = element_blank(),  # Remove minor gridlines
+        plot.title = element_text(face = "bold", size = 16),  # Bold and increase title size
+        legend.position = "top") +  # Move legend to the top for better balance
+  geom_text(aes(label = count), position = position_dodge(width = 0.8), vjust = -0.5, size = 4)  # Add counts above bars
+
+# Save the improved plot without significance annotations
+
+ggsave("ST_type_distribution_filtered_barplot.png", plot = bar_plot, dpi = 300, width = 12, height = 7)
+
+```
+
+```{r}
+
+library(patchwork)
+
+# Combine the heatmap_plot and B with a title
+combined_plot <- (heatmap_plot + B) + 
+  plot_layout(widths = c(3, 1)) + 
+  plot_annotation(title = "ST-types distribution in East Africa", 
+                  theme = theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold")))
+
+# Display the combined plot
+print(combined_plot)
+
+
+ggsave("combined_plot.png", plot = combined_plot, dpi = 300, width = 12, height = 7)
+
+```
+
+```{r}
+# Set working directory
+setwd("D:/mrsa/spa_results/")  # Adjust if needed
+
+# List all CSV files
+csv_files <- list.files(pattern = "*.csv$", full.names = TRUE)
+
+# Function to extract the spa type (last word of the second row)
+extract_spa_type <- function(file) {
+  lines <- readLines(file)  # Read file as raw lines
+  
+  if (length(lines) >= 3) {  # Ensure at least 2 lines exist
+    last_column <- unlist(strsplit(lines[3], "\\s+"))  # Split second line by spaces/tabs
+    spa_type <- tail(last_column, 1)  # Get last element (spa type)
+    return(data.frame(file_name = basename(file), spa_type = spa_type, stringsAsFactors = FALSE))
+  } else {
+    return(NULL)  # Skip if the file has insufficient lines
+  }
+}
+
+# Apply function to all files and combine results
+spa_types_df <- do.call(rbind, lapply(csv_files, extract_spa_type))
+
+# View final dataframe
+print(spa_types_df)
+
+# Remove rows where 'spa_type' does not start with "t"
+spa_types_df <- spa_types_df[grepl("^t", spa_types_df$spa_type), ]
+
+# View cleaned dataframe
+print(spa_types_df)
+
+
+```
+
+```{r}
+# Load necessary package
+library(dplyr)
+
+# Rename 'file_name' column to 'sample_id' and clean sample IDs
+spa_types_df <- spa_types_df %>%
+  rename(sample_id = file_name) %>%
+  mutate(sample_id = gsub("_spa_typing\\.csv$", "", sample_id))
+
+# Define genome ID ranges for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455))
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850))
+
+# Assign country based on sample_id
+spa_types_df <- spa_types_df %>%
+  mutate(country = case_when(
+    sample_id %in% uganda_ids ~ "Uganda",
+    sample_id %in% kenya_ids  ~ "Kenya",
+    sample_id %in% tanzania_ids ~ "Tanzania",
+    TRUE ~ "Unknown" # Assign 'Unknown' if sample ID is not in the lists
+  ))
+
+# View cleaned dataframe
+print(spa_types_df)
+
+```
+
+```{r}
+# Load libraries
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+# Ensure spa_type is a factor
+spa_types_df$spa_type <- as.factor(spa_types_df$spa_type)
+
+# Frequency table and sort
+spa_freq <- table(spa_types_df$spa_type)
+spa_freq_sorted <- sort(spa_freq, decreasing = TRUE)
+
+# Top 15 spa types
+top_n <- 15
+top_spa <- names(spa_freq_sorted)[1:top_n]
+
+# Create summary table with counts and percentages
+top_spa_df <- spa_types_df %>%
+  filter(spa_type %in% top_spa) %>%
+  count(spa_type, name = "count") %>%
+  mutate(percentage = 100 * count / sum(count)) %>%
+  arrange(desc(percentage))
+
+# View summary table
+print(top_spa_df)
+
+# Create the plot with percentages
+p <- ggplot(top_spa_df, aes(x = reorder(spa_type, -percentage), y = percentage)) +
+  geom_bar(stat = "identity", fill = "#2c7fb8") +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), 
+            vjust = -0.5, size = 4.2) +
+  labs(
+    title = "Top 15 Most Common spa Types",
+    x = "spa Type",
+    y = "Percentage (%)"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+p
+# Save high-resolution plot (300 dpi)
+ggsave(
+  filename = "D:/mrsa/spa_r/top15_spa_types_percentage.jpg",
+  plot = p,
+  width = 10,
+  height = 6,
+  dpi = 600
+)
+# Save the top spa types table as CSV
+write.csv(
+  top_spa_df,
+  file = "D:/mrsa/spa_r/top15_spa_types_summary.csv",
+  row.names = FALSE
+)
+
+```
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(viridis)
+
+
+
+# Set number of top spa types per country
+top_per_country <- 10
+
+# Get top N spa types per country
+top_spa_country <- spa_types_df %>%
+  group_by(country) %>%
+  count(spa_type) %>%
+  slice_max(order_by = n, n = top_per_country) %>%
+  ungroup() %>%
+  distinct(spa_type) %>%
+  pull(spa_type)
+
+# Prepare data for percentage plot
+spa_filtered <- spa_types_df %>%
+  filter(spa_type %in% top_spa_country) %>%
+  group_by(country, spa_type) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(country) %>%
+  mutate(percentage = count / sum(count) * 100) %>%
+  ungroup()
+
+# Plot as percent bar chart, facetted by country
+p_country <- ggplot(spa_filtered, aes(x = reorder(spa_type, -percentage), y = percentage, fill = spa_type)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  facet_wrap(~ country, scales = "free_x") +
+  scale_y_continuous(labels = percent_format(scale = 1)) +
+  scale_fill_viridis_d(option = "plasma", direction = -1) +
+  labs(
+    x = "spa Type",
+    y = "Percentage (%)",
+    title = "Top spa Types by Country "
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    strip.text = element_text(face = "bold", size = 11),
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+# Print plot
+print(p_country)
+
+# Save high-res image
+ggsave("D:/mrsa/spa_r/top_spa_types_by_country.jpg", p_country, width = 12, height = 8, dpi = 600)
+
+```
+
+```{r}
+# Create contingency table
+contingency_table <- table(spa_types_df$spa_type, spa_types_df$country)
+
+# Filter to only include spa types with sufficient counts (e.g., at least 5 observations)
+filtered_table <- contingency_table[rowSums(contingency_table) >= 10, ]
+
+# Perform chi-square test
+chi_test <- chisq.test(filtered_table)
+chi_test
+```
+
+```{r}
+# Pairwise chi-square tests
+countries <- unique(spa_types_df$country)
+country_pairs <- combn(countries, 2, simplify = FALSE)
+
+pairwise_results <- lapply(country_pairs, function(pair) {
+  pair_data <- spa_types_df %>% filter(country %in% pair)
+  pair_table <- table(pair_data$spa_type, pair_data$country)
+  pair_table <- pair_table[rowSums(pair_table) >= 5, ] # Filter rare types
+  if(nrow(pair_table) > 0) {  # Added closing parenthesis and > 0 check
+    test <- chisq.test(pair_table)
+    data.frame(country1 = pair[1], country2 = pair[2], 
+               p.value = test$p.value)
+  }
+})
+
+pairwise_df <- do.call(rbind, pairwise_results)
+pairwise_df$p.adj <- p.adjust(pairwise_df$p.value, method = "BH")
+pairwise_df
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(ggsignif)
+library(rcompanion)
+
+# 1. Create contingency table and filter rare spa types
+full_table <- table(spa_types_df$spa_type, spa_types_df$country)
+filtered_table <- full_table[rowSums(full_table) >= 5, ]  # Keep common types
+
+# 2. Fisher's exact test (simulate p-value for sparse data)
+fisher_test <- fisher.test(filtered_table, simulate.p.value = TRUE)
+
+# 3. Define all pairwise country combinations
+country_pairs <- combn(unique(spa_types_df$country), 2, simplify = FALSE)
+
+# 4. Calculate Cramer's V safely per country pair
+effect_sizes <- lapply(country_pairs, function(pair) {
+  pair_table <- filtered_table[, pair]
+  pair_table <- pair_table[rowSums(pair_table) > 0, ]  # remove zero rows
+  
+  if (nrow(pair_table) >= 2) {
+    cramerV(pair_table, ci = FALSE)
+  } else {
+    NA
+  }
+})
+
+# Optional: name effect sizes for reference
+names(effect_sizes) <- sapply(country_pairs, function(x) paste(x, collapse = "_vs_"))
+effect_sizes_df <- data.frame(
+  Country_Pair = names(effect_sizes),
+  Cramers_V = unlist(effect_sizes)
+)
+
+# 5. Prepare data for plotting proportions
+plot_data <- spa_types_df %>%
+  count(country, spa_type) %>%
+  group_by(country) %>%
+  mutate(prop = n / sum(n)) %>%
+  filter(spa_type %in% rownames(filtered_table))
+
+# 6. Plot: Stacked bar of spa types by country with statistics
+p <- ggplot(plot_data, aes(x = country, y = prop, fill = spa_type)) +
+  geom_col(position = "fill") +
+  
+  # Add annotation for p-value
+  annotate(
+    "text", x = 1.5, y = 1.07, 
+    label = paste("Fisher's p =", signif(fisher_test$p.value, 2)),
+    size = 5
+  ) +
+  
+  # Add annotation for mean Cramer's V
+  annotate(
+    "text", x = 1.5, y = 1.13, 
+    label = paste("Mean Cramer's V =", signif(mean(unlist(effect_sizes), na.rm = TRUE), 2)),
+    size = 5
+  ) +
+  
+  # Final cosmetics
+  scale_y_continuous(labels = scales::percent, expand = expansion(mult = c(0, 0.1))) +
+  labs(
+    title = "Spa Type Distribution by Country",
+    x = "", 
+    y = "Proportion", 
+    fill = "Spa Type"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    legend.position = "right",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+# Print plot
+print(p)
+
+
+
+ggsave("D:/mrsa/spa_r/spa_type_by_country_distribution.jpg", plot = p, dpi = 600, width = 10, height = 6)
+
+write.csv(effect_sizes_df, "D:/mrsa/spa_r/cramers_v_by_country_pair.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(viridis)
+
+# Prepare heatmap data
+heatmap_data <- spa_types_df %>%
+  group_by(country, spa_type) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  group_by(country) %>%
+  mutate(prop = count / sum(count)) %>%
+  group_by(spa_type) %>%
+  filter(n_distinct(country) >= 2 & sum(count) >= 5)
+
+# Create the heatmap without labels
+p_heatmap <- ggplot(heatmap_data, aes(x = country, y = spa_type, fill = prop)) +
+  geom_tile(color = "white", linewidth = 0.4) +
+  scale_fill_viridis(
+    name = "Proportion",
+    option = "D",
+    direction = -1,
+    limits = c(0, max(heatmap_data$prop)),
+    labels = scales::percent_format(accuracy = 1)
+  ) +
+  labs(
+    title = "Spa Type Distribution Across Countries",
+    subtitle = "Spa types present in ≥2 countries with ≥5 total isolates",
+    x = "Country",
+    y = "Spa Type"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "right"
+  )
+
+# Display the heatmap
+print(p_heatmap)
+
+# Save the heatmap as high-resolution image
+ggsave("D:/mrsa/spa_r/spa_type_heatmap.jpg", plot = p_heatmap, width = 10, height = 8, dpi = 600)
+
+
+```
+
+```{r}
+# First identify significantly different spa types (example using t1476)
+sig_type <- "t1476"
+sig_data <- spa_types_df %>%
+  filter(spa_type == sig_type) %>%
+  group_by(country) %>%
+  summarise(count = n(), total = nrow(spa_types_df[spa_types_df$country == first(country),]))
+
+# Perform pairwise tests for this type
+pairwise_results <- pairwise.prop.test(
+  x = sig_data$count,
+  n = sig_data$total,
+  p.adjust.method = "BH"
+)
+
+# Create plot with significance bars
+ggplot(sig_data, aes(x = country, y = count/total, fill = country)) +
+  geom_bar(stat = "identity") +
+  geom_signif(comparisons = list(c("Tanzania", "Kenya")), 
+              annotations = format(pairwise_results$p.value[1,2], digits = 2),
+              y_position = 0.9*max(sig_data$count/sig_data$total)) +
+  labs(title = paste("Prevalence of", sig_type, "by Country"),
+       y = "Proportion") +
+  theme_minimal()
+```
+
+```{r}
+library(ggtern)
+
+tern_data <- spa_types_df %>%
+  group_by(country, spa_type) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  filter(spa_type %in% names(which(table(spa_type) >= 5))) %>%
+  pivot_wider(names_from = country, values_from = count, values_fill = 0)
+
+ggtern(tern_data, aes(x = Tanzania, y = Kenya, z = Uganda)) +
+  geom_point(aes(size = Tanzania + Kenya + Uganda, color = spa_type)) +
+  labs(title = "Ternary Distribution of Common Spa Types") +
+  theme_rgbw()
+```
+mec profiling
+```{r}
+setwd("D:/mrsa/abricate/AMR/")
+# List all summary.txt files in the directory
+file_list <- list.files(pattern = "summary\\.txt$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+df_list <- list()
+
+# Define the expected column names
+common_cols <- c("FILE", "SEQUENCE", "START", "END", "STRAND", "GENE", 
+                 "COVERAGE", "COVERAGE_MAP", "GAPS", "%COVERAGE", 
+                 "%IDENTITY", "DATABASE", "ACCESSION", "PRODUCT", "RESISTANCE")
+
+# Loop through each file and read it into a data frame
+for (file in file_list) {
+  # Check if the file is not empty
+  if (file.info(file)$size > 0) {
+    # Try to read the file and skip if there's an error
+    try({
+      df <- read.table(file, header = TRUE, sep = "\t", fill = TRUE, comment.char = "", stringsAsFactors = FALSE)
+      
+      # Ensure that we have at least the expected number of columns (to avoid NAs)
+      if (ncol(df) >= length(common_cols)) {
+        # Subset the dataframe to keep only the expected columns, or add missing ones
+        colnames(df) <- common_cols[1:ncol(df)]
+        missing_cols <- setdiff(common_cols, colnames(df))
+        
+        # Add missing columns with NA values if necessary
+        if (length(missing_cols) > 0) {
+          df[missing_cols] <- NA
+        }
+        
+        # Reorder columns to match the common structure
+        df <- df[, common_cols]
+        
+        # Store each valid data frame in the list
+        df_list[[file]] <- df
+      } else {
+        cat("Skipping file due to insufficient columns:", file, "\n")
+      }
+    }, silent = TRUE)
+  } else {
+    cat("Skipping empty file:", file, "\n")
+  }
+}
+
+# Combine all valid data frames into one
+final_df <- do.call(rbind, df_list)
+
+
+
+# Print the combined data frame to check
+print(final_df)
+
+# Extract genome IDs from the FILE column
+final_df$GENOME_ID <- gsub(".*(ERR[0-9]+).*", "\\1", final_df$FILE)
+
+# Define genome ID ranges for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455))
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850))
+
+# Create a mapping dataframe
+country_mapping <- data.frame(
+  GENOME_ID = c(uganda_ids, kenya_ids, tanzania_ids),
+  COUNTRY = c(
+    rep("Uganda", length(uganda_ids)),
+    rep("Kenya", length(kenya_ids)),
+    rep("Tanzania", length(tanzania_ids))
+  )
+)
+
+# Merge country information into final_df
+final_df <- merge(final_df, country_mapping, by = "GENOME_ID", all.x = TRUE)
+
+# View the updated dataframe
+head(final_df)
+
+
+
+# Load dplyr package
+library(dplyr)
+
+# Filter the dataframe and select relevant columns
+filtered_df <- final_df %>%
+  filter(grepl("mec", GENE, ignore.case = TRUE)) %>%
+  select(GENOME_ID, GENE, RESISTANCE, COUNTRY)
+
+# View the filtered dataframe
+head(filtered_df)
+
+
+
+
+
+```
+
+```{r}
+country_counts <- table(filtered_df$COUNTRY)
+total_count <- sum(country_counts)  # Total number of genome entries
+country_percentage <- (country_counts / total_count) * 100
+country_summary <- data.frame(
+  Country = names(country_counts),
+  Count = as.integer(country_counts),
+  Percentage = round(country_percentage, 2)
+)
+
+print(country_summary)
+
+
+
+```
+
+```{r}
+# Set working directory
+setwd("D:/mrsa/relaxed_sccmec_results")
+
+# List only the .tsv files that match the pattern: ERR followed by digits and ending in .tsv
+target_files <- list.files(pattern = "^ERR[0-9]+\\.tsv$")
+
+# Read them into a named list of data frames
+tsv_list <- lapply(setNames(target_files, target_files), read.delim)
+
+# View the names of the loaded data frames
+names(tsv_list)# Set working directory
+setwd("D:/mrsa/relaxed_sccmec_results")
+
+# List only the target .tsv files matching the pattern
+target_files <- list.files(pattern = "^ERR[0-9]+\\.tsv$")
+
+# Read all matching .tsv files and combine them into one data frame
+combined_df <- do.call(rbind, lapply(target_files, function(file) {
+  df <- read.delim(file)
+  df$file_name <- file  # Optionally add the file name as a column for reference
+  return(df)
+}))
+
+# View the combined data frame
+head(combined_df)
+
+
+```
+
+```{r}
+# Define sample IDs for each country
+uganda_ids <- paste0("ERR", 4692235:4692276)
+
+kenya_ids <- c(
+  paste0("ERR", 3150908:3151001), "ERR3218227",
+  paste0("ERR", 1764887:1765052),
+  paste0("ERR", 1791869:1791882),
+  paste0("ERR", 2436451:2436455)
+)
+
+tanzania_ids <- c(
+  paste0("ERR", 12916291:12916300),
+  paste0("ERR", 12511686:12511850)
+)
+
+# Assign COUNTRY based on sample membership
+combined_df$Country <- ifelse(combined_df$sample %in% uganda_ids, "Uganda",
+                        ifelse(combined_df$sample %in% kenya_ids, "Kenya",
+                        ifelse(combined_df$sample %in% tanzania_ids, "Tanzania", "Unknown")))
+
+# Check results
+table(combined_df$Country)
+head(combined_df)
+
+```
+
+```{r}
+library(dplyr)
+library(writexl)
+
+combined_df <- combined_df %>%
+  select(sample, type, subtype, targets, mecA, Country)
+combined_df[combined_df == "-"] <- "none"
+write_xlsx(combined_df, "D:/mrsa/relaxed_sccmec_results/selected_sccmec_results.xlsx")
+
+```
+
+
+```{r}
+library(tidyverse)
+
+# Clean subtype labels and create binary mecA column
+combined_df <- combined_df %>%
+  mutate(
+    subtype = ifelse(subtype %in% c("none", "multiple"), NA, subtype),
+    mecA_present = ifelse(mecA == "+", "Present", "Absent")
+  ) %>%
+  filter(type != "none")  # Remove untyped samples if needed
+```
+
+
+```{r}
+chisq_test <- chisq.test(table(combined_df$type, combined_df$Country))
+chisq_test  # Check p-value
+```
+```{r}
+pairwise_fisher <- function(data, country1, country2) {
+  tab <- table(data$type[data$Country %in% c(country1, country2)], 
+               data$Country[data$Country %in% c(country1, country2)])
+  fisher.test(tab, simulate.p.value = TRUE)
+}
+
+# Example: Kenya vs. Tanzania
+pairwise_fisher(combined_df, "Kenya", "Tanzania")
+pairwise_fisher(combined_df, "Kenya", "Uganda")
+pairwise_fisher(combined_df, "Uganda", "Tanzania")
+
+```
+
+```{r}
+# Ensure the reference level is "Absent"
+combined_df$mecA_present <- factor(combined_df$mecA_present, 
+                                   levels = c("Absent", "Present"))
+
+# Now run glm
+mecA_model <- glm(mecA_present ~ Country, 
+                  data = combined_df, 
+                  family = "binomial")
+summary(mecA_model)
+```
+
+```{r}
+library(ggplot2)
+
+# Create frequency table
+type_country <- as.data.frame(table(combined_df$type, combined_df$Country))
+colnames(type_country) <- c("Type", "Country", "Count")
+
+# Create the plot
+sccmec_plot <- ggplot(type_country, aes(x = Country, y = Count, fill = Type)) +
+  geom_bar(stat = "identity", position = "stack") +
+  scale_fill_brewer(palette = "Set3") +  # Optional: prettier color palette
+  labs(title = "Distribution of SCCmec Types by Country",
+       x = "Country", y = "Isolate Count", fill = "SCCmec Type") +
+  theme_minimal(base_size = 14) +  # Bigger text for publication
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    legend.position = "right"
+  )
+
+# Print the plot
+print(sccmec_plot)
+
+# Save as high-resolution TIFF
+ggsave("sccmec/SCCmec_Distribution_by_Country.jpg", 
+       plot = sccmec_plot,
+       width = 10, height = 6, dpi = 600)
+
+```
+
+```{r}
+# Open a high-resolution JPEG device
+jpeg("sccmec/SCCmec_Mosaic_Distribution_by_Country.jpg", 
+     width = 10, height = 6, units = "in", res = 600, quality = 100)
+
+# Create the mosaic plot
+mosaicplot(table(combined_df$type, combined_df$Country),
+           main = "SCCmec Type Distribution by Country",
+           xlab = "SCCmec Type", ylab = "Country",
+           color = TRUE, shade = TRUE)
+
+# Close the graphics device
+dev.off()
+
+```
+
+
+
+
+
+
+```{r}
+# Create a matrix of p-values from pairwise tests
+pairwise_results <- matrix(NA, nrow = 3, ncol = 3)
+rownames(pairwise_results) <- colnames(pairwise_results) <- c("Kenya", "Tanzania", "Uganda")
+
+# Fill with your p-values
+pairwise_results["Kenya", "Tanzania"] <- 0.0004998
+pairwise_results["Kenya", "Uganda"] <- 0.02349
+pairwise_results["Tanzania", "Uganda"] <- 0.001499
+
+# Plot as a heatmap
+library(reshape2)
+melted_results <- melt(pairwise_results, na.rm = TRUE)
+
+p <- ggplot(melted_results, aes(Var1, Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "red", high = "blue", 
+                     name = "p-value", 
+                     limits = c(0, 0.03)) +
+  geom_text(aes(label = format.pval(value, digits = 2)), 
+            color = "white", size = 4) +
+  labs(title = "Pairwise Fisher Exact Test Results",
+       x = "", y = "") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggsave("sccmec/fishers_results.jpg", p, width = 10, height = 8, dpi = 600)
+
+```
+
+```{r}
+table(combined_df$Country, combined_df$mecA_present)
+```
+
+
+
+
+
+
+```{r}
+library(ggplot2)
+library(scales)
+
+p <-ggplot(combined_df, aes(x = Country, fill = type)) +
+  geom_bar(position = "fill", width = 0.8, color = "white", linewidth = 0.1) +
+  scale_fill_manual(
+    name = "SCCmec Type",
+    values = c("III" = "#E69F00", "IV" = "#56B4E9", "V" = "#009E73", "VI" = "#F0E442"),
+    na.value = "grey90"
+  ) +
+  scale_y_continuous(labels = percent_format(), 
+                    expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    x = NULL,
+    y = "Proportion of isolates",
+    title = "Distribution of SCCmec types by country"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "top",
+    legend.title = element_text(face = "bold", size = 10),
+    legend.text = element_text(size = 9),
+    plot.title = element_text(face = "bold", hjust = 0.5, size = 14),
+    axis.title.y = element_text(margin = margin(r = 10)),
+    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    panel.grid.major.x = element_blank(),
+    plot.caption = element_text(color = "grey50", size = 8),
+    plot.margin = unit(c(1, 1, 1, 1), "cm")
+  ) +
+  guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+p
+ggsave("sccmec/SCCmec_types.jpg",
+       plot = p,
+       dpi = 600,                     # High resolution
+       width = 8,                     # Inches (adjust as needed)
+       height = 6)            # Lossless compression
+```
+
+
+
+```{r}
+library(sf)
+library(rnaturalearth)
+library(tidyverse)
+library(scatterpie)  # Key package for pie charts on maps
+library(ggrepel)     # For better label placement
+
+# Install packages if needed
+if (!require("scatterpie")) install.packages("scatterpie")
+if (!require("ggrepel")) install.packages("ggrepel")
+
+# 1. Prepare your data - count SCCmec types by country
+type_counts <- combined_df %>%
+  count(Country, type) %>%
+  group_by(Country) %>%
+  mutate(percent = n/sum(n)*100) %>%
+  ungroup()
+
+# Prepare pie chart data with coordinates
+pie_data <- type_counts %>%
+  mutate(
+    lon = case_when(
+      Country == "Kenya" ~ 37.8,
+      Country == "Tanzania" ~ 34.9,
+      Country == "Uganda" ~ 32.4
+    ),
+    lat = case_when(
+      Country == "Kenya" ~ -0.5,
+      Country == "Tanzania" ~ -6.4,
+      Country == "Uganda" ~ 1.4
+    ),
+    # Calculate radius proportional to sample count
+    radius = sqrt(n) * 0.2
+  ) %>%
+  select(-percent) %>%
+  pivot_wider(names_from = type, values_from = n, values_fill = 0)
+
+pie_data <- tibble::tibble(
+  Country = c(
+    "Kenya", "Kenya", "Kenya",
+    "Tanzania", "Tanzania",
+    "Uganda", "Uganda", "Uganda"
+  ),
+  lon = c(
+    37.8, 37.8, 37.8,
+    34.9, 34.9,
+    32.4, 32.4, 32.4
+  ),
+  lat = c(
+    -0.5, -0.5, -0.5,
+    -6.4, -6.4,
+    1.4, 1.4, 1.4
+  ),
+  radius = c(
+    sqrt(5)*0.2,  # Kenya - III
+    sqrt(7)*0.2,  # Kenya - IV
+    sqrt(7)*0.2,  # Kenya - V
+    sqrt(1)*0.2,  # Tanzania - IV
+    sqrt(73)*0.2, # Tanzania - V
+    sqrt(1)*0.2,  # Uganda - III
+    sqrt(5)*0.2,  # Uganda - V
+    sqrt(2)*0.2   # Uganda - VI
+  ),
+  III = c(5, 0, 0, 0, 0, 1, 0, 0),
+  IV  = c(0, 7, 0, 1, 0, 0, 0, 0),
+  V   = c(0, 0, 7, 0, 73, 0, 5, 0),
+  VI  = c(0, 0, 0, 0, 0, 0, 0, 2)
+)
+
+
+
+
+# Get country shapes
+east_africa <- ne_countries(scale = 50, returnclass = "sf") %>%
+  filter(name %in% c("Kenya", "Tanzania", "Uganda"))
+
+# Create the visualization
+ggplot() +
+  # Base map
+  geom_sf(data = east_africa, fill = "gray95", color = "white") +
+  
+  # Add pie charts
+  geom_scatterpie(
+    data = pie_data,
+    aes(x = lon, y = lat, r = radius),
+    cols = c("III", "IV", "V", "VI"),
+    color = NA,
+    alpha = 0.8
+  ) +
+  
+  # Custom color scale
+  scale_fill_manual(
+    name = "SCCmec Type",
+    values = c("III" = "#E69F00", "IV" = "#56B4E9", "V" = "#009E73", "VI" = "#F0E442"),
+    breaks = c("III", "IV", "V", "VI")
+  ) +
+  
+  # Add country labels with sample counts
+  geom_label_repel(
+    data = pie_data,
+    aes(x = lon, y = lat, 
+        label = paste0(Country, "\nTotal: ", III+IV+V+VI)),
+    box.padding = 1,
+    point.padding = 0.5,
+    min.segment.length = 0
+  ) +
+  
+  # Titles and theme
+  labs(
+    title = "SCCmec Type Distribution in East Africa",
+    subtitle = "Pie size represents sample count, colors show type distribution",
+  ) +
+  theme_void() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    legend.position = "right"
+  )
+```
+
+
+```{r}
+library(sf)
+library(rnaturalearth)
+library(tidyverse)
+library(scatterpie)
+library(ggrepel)
+
+# Consolidated pie data - One row per country
+pie_data <- tibble::tibble(
+  Country = c("Kenya", "Tanzania", "Uganda"),
+  lon = c(37.8, 34.9, 32.4),
+  lat = c(-0.5, -6.4, 1.4),
+  III = c(5, 0, 1),
+  IV  = c(7, 1, 0),
+  V   = c(7, 73, 5),
+  VI  = c(0, 0, 2)
+) %>%
+  mutate(
+    total = III + IV + V + VI,
+    radius = sqrt(total) * 0.2
+  )
+
+# Get country shapes
+east_africa <- ne_countries(scale = 50, returnclass = "sf") %>%
+  filter(name %in% c("Kenya", "Tanzania", "Uganda"))
+
+# Plot
+p <- ggplot() +
+  # Base map
+  geom_sf(data = east_africa, fill = "gray95", color = "gray60", size = 0.4) +
+  
+  # Pie charts
+  geom_scatterpie(
+    data = pie_data,
+    aes(x = lon, y = lat, r = radius),
+    cols = c("III", "IV", "V", "VI"),
+    color = "white",
+    alpha = 0.9
+  ) +
+  
+  # Add labels with total counts
+  geom_label_repel(
+    data = pie_data,
+    aes(x = lon, y = lat, label = paste0(Country, "\nTotal: ", total)),
+    size = 4,
+    fontface = "bold",
+    fill = "white",
+    box.padding = 0.5,
+    point.padding = 0.5,
+    segment.color = "gray50"
+  ) +
+
+  # Custom color palette
+  scale_fill_manual(
+    name = "SCCmec Type",
+    values = c("III" = "#E69F00", "IV" = "#56B4E9", "V" = "#009E73", "VI" = "#F0E442")
+  ) +
+  
+  # Titles
+  labs(
+    title = "SCCmec Type Distribution in East Africa",
+    subtitle = "Pie size proportional to sample count; Colors indicate SCCmec types"
+  ) +
+
+  # Theme
+  coord_sf(xlim = c(30, 41), ylim = c(-12, 5), expand = FALSE) +
+  theme_void(base_family = "Helvetica") +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    legend.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+# Print the plot
+print(p)
+
+# Save high-resolution version
+ggsave("sccmec/SCCmec_EastAfrica_Distribution.jpg", p, width = 10, height = 8, dpi = 600)
+
+```
+
+
+
+
+
+
+```{r}
+library(igraph)
+library(ggraph)
+
+# Create adjacency matrix from targets
+edges <- combined_df$targets %>%
+  str_split(",") %>%
+  map(~combn(., 2, simplify = FALSE)) %>%
+  unlist() %>%
+  matrix(ncol = 2, byrow = TRUE) %>%
+  as.data.frame() %>%
+  count(V1, V2)
+
+graph <- graph_from_data_frame(edges, directed = FALSE)
+
+ggraph(graph, layout = "fr") +
+  geom_edge_link(aes(width = n), alpha = 0.6) +
+  geom_node_point(size = 8, color = "tomato") +
+  geom_node_text(aes(label = name), repel = TRUE) +
+  theme_void()
+```
+
+```{r}
+library(igraph)
+library(ggraph)
+library(tidyverse)
+
+# 1. Preprocess the data more carefully
+edges <- combined_df %>%
+  separate_rows(targets, sep = ",") %>%
+  mutate(targets = str_trim(targets)) %>%
+  group_by(sample) %>%
+  filter(n() > 1) %>%  # Only samples with multiple targets
+  do({
+    targets <- unique(.$targets)
+    if(length(targets) >= 2) {
+      expand_grid(V1 = targets, V2 = targets) %>%
+        filter(V1 < V2)  # Avoid duplicate pairs
+    } else {
+      NULL
+    }
+  }) %>%
+  ungroup() %>%
+  count(V1, V2, name = "weight")
+
+# 2. Create graph with meaningful attributes
+graph <- graph_from_data_frame(edges, directed = FALSE) %>%
+  set_edge_attr("weight", value = edges$weight) %>%
+  simplify(edge.attr.comb = "sum")  # Combine multiple edges
+
+# Calculate node importance
+V(graph)$degree <- degree(graph)
+V(graph)$betweenness <- betweenness(graph)
+
+# 3. Enhanced visualization
+set.seed(123)  # For reproducibility
+ggraph(graph, layout = "fr") +
+  # Edges with weight-based appearance
+  geom_edge_link(
+    aes(width = weight, alpha = weight),
+    color = "gray50",
+    show.legend = TRUE
+  ) +
+  scale_edge_width(range = c(0.5, 3)) +
+  scale_edge_alpha(range = c(0.3, 0.8)) +
+  
+  # Nodes with importance-based sizing
+  geom_node_point(
+    aes(size = degree, fill = betweenness),
+    shape = 21,
+    color = "white",
+    stroke = 0.5
+  ) +
+  scale_size_continuous(range = c(4, 15), name = "Degree") +
+  scale_fill_viridis_c(option = "magma", name = "Betweenness") +
+  
+  # Node labels with smart positioning
+  geom_node_text(
+    aes(label = name, filter = degree > quantile(degree, 0.5)),
+    repel = TRUE,
+    size = 4,
+    point.padding = 0.2,
+    box.padding = 0.3,
+    color = "black"
+  ) +
+  
+  # Layout and theme
+  theme_graph(base_family = "sans") +
+  labs(
+    title = "Co-occurrence Network of SCCmec Elements",
+    subtitle = "Edge width shows frequency of co-occurrence\nNode size indicates degree, color shows betweenness centrality",
+    caption = paste("Total samples:", nrow(combined_df))
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "bottom"
+  )
+```
+
+```{r}
+library(igraph)
+library(ggraph)
+library(tidyverse)
+
+# 1. Preprocess data - Build edges from co-occurring SCCmec elements in samples
+edges <- combined_df %>%
+  separate_rows(targets, sep = ",") %>%
+  mutate(targets = str_trim(targets)) %>%
+  group_by(sample) %>%
+  filter(n() > 1) %>%
+  do({
+    targets <- unique(.$targets)
+    if(length(targets) >= 2) {
+      expand_grid(V1 = targets, V2 = targets) %>%
+        filter(V1 < V2)
+    } else NULL
+  }) %>%
+  ungroup() %>%
+  count(V1, V2, name = "weight")
+
+# 2. Build graph object
+graph <- graph_from_data_frame(edges, directed = FALSE) %>%
+  set_edge_attr("weight", value = edges$weight) %>%
+  simplify(edge.attr.comb = "sum")
+
+# 3. Calculate centrality metrics
+V(graph)$degree <- degree(graph)
+V(graph)$betweenness <- betweenness(graph)
+
+# 4. Enhanced visualization
+set.seed(123)
+ggraph(graph, layout = "fr") +
+  # Edges based on co-occurrence strength
+  geom_edge_link(
+    aes(width = weight, alpha = weight),
+    color = "gray60"
+  ) +
+  scale_edge_width(range = c(0.3, 3), guide = "none") +
+  scale_edge_alpha(range = c(0.2, 0.8), guide = "none") +
+
+  # Nodes with size = degree, fill = betweenness centrality
+  geom_node_point(
+    aes(size = degree, fill = betweenness),
+    shape = 21, color = "black", stroke = 0.3
+  ) +
+  scale_size_continuous(range = c(3, 12), name = "Degree (Connections)") +
+  scale_fill_viridis_c(option = "plasma", name = "Betweenness Centrality") +
+
+  # Label more important nodes
+  geom_node_text(
+    aes(label = name),
+    size = 4,
+    fontface = "bold",
+    repel = TRUE,
+    color = "black"
+  ) +
+
+  # Final plot theme
+  theme_graph(base_family = "Helvetica") +
+  labs(
+    title = "SCCmec Element Co-occurrence Network",
+    subtitle = "Edge width: Co-occurrence frequency | Node size: Degree | Fill: Betweenness centrality",
+    caption = glue::glue("Total samples analyzed: {nrow(combined_df)}")
+  ) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    legend.position = "bottom",
+    legend.box = "vertical"
+  )
+
+```
+
+
+```{r}
+library(igraph)
+library(ggraph)
+library(tidyverse)
+
+# Preprocess data
+edges <- combined_df %>%
+  separate_rows(targets, sep = ",") %>%
+  mutate(targets = str_trim(targets)) %>%
+  group_by(sample) %>%
+  filter(n() > 1) %>%
+  do({
+    targets <- unique(.$targets)
+    if(length(targets) >= 2) {
+      expand_grid(V1 = targets, V2 = targets) %>%
+        filter(V1 < V2)
+    } else NULL
+  }) %>%
+  ungroup() %>%
+  count(V1, V2, name = "weight")
+
+# Build graph
+graph <- graph_from_data_frame(edges, directed = FALSE) %>%
+  set_edge_attr("weight", value = edges$weight) %>%
+  simplify(edge.attr.comb = "sum")
+
+# Centrality
+V(graph)$degree <- degree(graph)
+V(graph)$betweenness <- betweenness(graph)
+
+# Create the plot and assign to object
+library(glue)  # Required for glue::glue()
+
+set.seed(123)
+network_plot <- ggraph(graph, layout = "fr") +
+  geom_edge_link(
+    aes(width = weight, alpha = weight),
+    color = "gray60"
+  ) +
+  scale_edge_width(range = c(0.3, 3), guide = "none") +
+  scale_edge_alpha(range = c(0.2, 0.8), guide = "none") +
+  geom_node_point(
+    aes(size = degree, fill = betweenness),
+    shape = 21, color = "black", stroke = 0.3
+  ) +
+  scale_size_continuous(range = c(3, 12), name = "Degree (Connections)") +
+  scale_fill_viridis_c(option = "plasma", name = "Betweenness Centrality") +
+  geom_node_text(
+    aes(label = name),
+    size = 4,
+    fontface = "bold",
+    repel = TRUE,
+    color = "black"
+  ) +
+  theme_graph(base_family = "Helvetica") +
+  labs(
+    title = "SCCmec Element Co-occurrence Network",
+    subtitle = "Edge width: Co-occurrence frequency | Node size: Degree | Fill: Betweenness centrality",
+    caption = glue::glue("Total samples analyzed: {nrow(combined_df)}")
+  ) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    legend.position = "bottom",
+    legend.box = "vertical"
+  )
+
+ggsave("sccmec/sccmec_network_plot.jpg", plot = network_plot, width = 10, height = 8, dpi = 600)
+
+```
+
