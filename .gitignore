@@ -1,0 +1,48 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.sra
+
+# Alignment files
+*.bam
+*.sam
+*.bai
+
+# Genome assembly / annotation outputs
+*.fasta
+*.fa
+*.fna
+*.gbk
+*.gff
+*.faa
+*.ffn
+*.sqn
+
+# Compressed/intermediate files
+*.zip
+*.tar.gz
+
+# HPC logs and scratch
+logs/
+scratch/
+*.out
+*.err
+
+# Large workflow outputs
+sra_files/
+fastq_files/
+trimmed_fastq/
+spades_assemblies/
+prokka_results/
+quast_results*/
+abricate_results/
+roary_results*/
+phigaro_results*/
+isescan_results/
+sccmec_results/
+
+# Python/R temporary files
+__pycache__/
+.ipynb_checkpoints/
+.Rhistory
+.RData
