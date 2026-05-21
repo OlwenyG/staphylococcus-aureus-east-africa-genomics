@@ -1,0 +1,18 @@
+RESULTS
+=======
+
+SCCmEC Typing and Mobile Genetic Element Distribution in East African S. aureus Isolates
+
+We performed comprehensive SCCmEC typing on 313 S. aureus isolates collected from Kenya (n=171), Tanzania (n=124), and Uganda (n=18). SCCmEC analysis revealed significant geographical variation in cassette distribution across the three countries (χ²=52.2, p=1.69e-09).
+
+Among all isolates, only 36 (11.5%) could be assigned to definitive SCCmEC types. Type V was the most prevalent (n=29, 9.3%), followed by type IV (n=5, 1.6%) and type III (n=2, 0.6%). The majority of isolates (n=277, 88.5%) contained untypable cassettes, suggesting the presence of novel or recombinant SCCmEC elements in East African S. aureus populations.
+
+Geographical distribution patterns were striking. Tanzanian isolates exhibited the highest prevalence of type V SCCmEC (22.6%), while Kenyan isolates predominantly carried type IV (2.3%) and type III (0.6%) elements. Ugandan isolates showed mixed carriage with both type III (5.6%) and type V (5.6%) present.
+
+The mecA gene, encoding methicillin resistance, was detected in 65 isolates (20.8%) with significant geographical heterogeneity (Fisher's exact test, p=2.84e-20). Tanzania displayed the highest mecA prevalence (46.0%), markedly contrasting with Kenya (2.9%) and Uganda (16.7%).
+
+Analysis of insertion sequence (IS) elements revealed complex distribution patterns. IS1272 was detected in 80 isolates (25.6%) overall, with highest prevalence in Tanzania (44.4%) compared to Kenya (14.0%). IS431 variants showed varying prevalence across countries, with complete IS431 loci (IS431, IS431_1, IS431_2) detected in 44 isolates (14.1%).
+
+Type V SCCmEC cassettes were strongly associated with IS1272 carriage (96.6%), while type IV cassettes consistently contained both IS1272 and IS431 variants. Type III cassettes lacked IS1272 but contained complete IS431 loci. These associations suggest distinct evolutionary trajectories for SCCmEC elements in East Africa, potentially driven by differential selection pressures and horizontal gene transfer dynamics.
+
+The high prevalence of untypable SCCmEC elements (88.5%) coupled with geographical structuring of type distributions indicates ongoing evolution and diversification of staphylococcal cassette chromosomes in this region. The significant association between IS1272 and Tanzanian isolates suggests enhanced mobility of resistance determinants, potentially contributing to the observed high mecA prevalence in this country.

@@ -1,0 +1,127 @@
+---
+title: "Analysis"
+author: "Geoffrey Olweny"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+library(readxl)
+library(dplyr)
+library(janitor)
+
+# Set file paths
+metadata_file <- "Master_Metadata.xlsx"
+mlst_file     <- "mlst_313.xlsx"
+
+# Check sheet names
+excel_sheets(metadata_file)
+excel_sheets(mlst_file)
+
+# Read first sheets
+metadata <- read_excel(metadata_file, sheet = 1) %>%
+  clean_names()
+
+mlst <- read_excel(mlst_file, sheet = 1) %>%
+  clean_names()
+
+# Inspect structure
+glimpse(metadata)
+glimpse(mlst)
+
+# Check column names
+names(metadata)
+names(mlst)
+
+# Check sample counts
+nrow(metadata)
+nrow(mlst)
+
+# Check sample ID columns
+metadata %>% count(sample_id) %>% filter(n > 1)
+mlst %>% count(sample_id) %>% filter(n > 1)
+```
+
+```{r}
+master_mlst <- metadata %>%
+  left_join(mlst, by = "sample_id")
+
+# Check merge success
+nrow(master_mlst)
+
+master_mlst %>%
+  summarise(
+    total_samples = n(),
+    missing_sequence_type = sum(is.na(sequence_type))
+  )
+
+# Save
+write.csv(master_mlst, "master_metadata_mlst_313.csv", row.names = FALSE)
+```
+```{r}
+clone_status <- read.csv("fastANI_99.99_dereplication_status_alphabetical.csv") %>%
+  clean_names()
+
+
+master_mlst_clone <- master_mlst %>%
+  left_join(clone_status, by = "sample_id")
+
+master_mlst_clone %>%
+  summarise(
+    total_samples = n(),
+    missing_clone_status = sum(is.na(derep_status_alphabetical))
+  )
+```
+```{r}
+table(master_mlst_clone$derep_status_alphabetical)
+```
+
+```{r}
+table(master_mlst_clone$country, master_mlst_clone$derep_status_alphabetical)
+```
+
+```{r}
+master_mlst_clone %>%
+  count(clone_cluster_99_99ani, country, sequence_type, sort = TRUE)
+```
+
+```{r}
+master_derep <- master_mlst_clone %>%
+  filter(derep_status_alphabetical == "Retained")
+
+nrow(master_derep)
+```
+#MLST analysis
+```{r}
+derep_cc_summary <- master_derep %>%
+  count(country, sequence_type, sort = TRUE)
+
+derep_cc_summary
+```
+
+```{r}
+master_derep %>%
+  count(sequence_type, sort = TRUE)
+```
+
+```{r}
+top_ccs <- master_derep %>%
+  filter(sequence_type %in% c("152", "8", "15", "88", "72"))
+
+tab <- table(top_ccs$country, top_ccs$sequence_type)
+
+tab
+
+chisq.test(tab)
+```
+
+```{r}
+fisher.test(tab)
+```
+

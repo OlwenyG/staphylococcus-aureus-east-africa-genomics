@@ -1,0 +1,1897 @@
+sample_id,GENE,PRODUCT,RESISTANCE,country,%COVERAGE,%IDENTITY
+ERR12511686,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511686,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511686,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511686,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511686,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511686,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511686,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511686,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511686,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511686,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511687,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511687,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511687,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511687,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511687,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511688,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511688,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511688,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511688,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511688,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511688,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511688,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511689,tet(M),tetracycline resistance ribosomal protection protein Tet(M),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511689,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511689,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511689,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511689,catA7,type A-7 chloramphenicol O-acetyltransferase,CHLORAMPHENICOL,Tanzania,100.0,98.46
+ERR12511689,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,99.86
+ERR12511689,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511689,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511689,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511689,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511689,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511689,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511691,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511691,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511691,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511691,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511691,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511691,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511691,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511692,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511692,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511692,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511692,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511692,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511692,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511693,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511693,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511693,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511693,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511693,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511693,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511694,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511694,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511694,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511694,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511696,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511696,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511696,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511696,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511696,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511696,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511696,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511696,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511696,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511696,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511698,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511698,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511698,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511698,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511698,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511699,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511699,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.72
+ERR12511699,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511699,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511699,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511699,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511700,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511700,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511700,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511700,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511700,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511700,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511700,str,streptomycin adenylyltransferase Str,STREPTOMYCIN,Tanzania,100.0,99.88
+ERR12511700,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511700,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511700,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511700,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511701,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511701,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511701,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511701,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511701,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511701,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511701,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511701,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511701,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511701,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511702,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,99.8
+ERR12511702,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511703,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511703,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511703,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511703,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511704,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511704,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511704,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511704,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511704,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511704,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511704,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511704,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511704,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511704,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511704,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511705,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511705,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511705,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511705,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511705,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511705,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511705,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511705,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511705,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511705,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511707,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511707,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,89.53,92.88
+ERR12511707,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511707,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,83.33,97.27
+ERR12511707,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511707,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511707,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511707,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511707,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.95
+ERR12511707,msr(A),ABC-F type ribosomal protection protein Msr(A),MACROLIDE,Tanzania,100.0,100.0
+ERR12511707,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511707,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511707,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511708,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511708,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.95
+ERR12511708,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.04
+ERR12511708,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511708,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511709,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511709,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511709,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511709,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511709,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511709,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511710,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511710,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511710,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511710,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511710,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511710,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511711,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,99.74
+ERR12511711,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511711,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Tanzania,100.0,99.29
+ERR12511711,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.41
+ERR12511711,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,99.46
+ERR12511712,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511712,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511712,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511712,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511712,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511712,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511712,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511712,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511712,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511712,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511713,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511713,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511713,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511713,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.57
+ERR12511713,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.89
+ERR12511713,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511714,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511714,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511714,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511714,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511714,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511715,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511715,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511715,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511715,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511715,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511716,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511716,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511716,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.72
+ERR12511716,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511716,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511716,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511718,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511718,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511718,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511718,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511718,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511719,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511719,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511719,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511719,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511719,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,94.56,100.0
+ERR12511719,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511720,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511720,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511720,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511720,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511720,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511720,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511720,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511720,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511720,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511720,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511721,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511721,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511721,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511721,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511721,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511721,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511721,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511723,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511723,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511723,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511723,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511723,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511723,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511723,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511723,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511723,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511723,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511724,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511724,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511724,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511724,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511724,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511724,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511724,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511724,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511724,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511724,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511724,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511725,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511725,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511725,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511725,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511725,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511725,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511725,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511726,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511726,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511726,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511726,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511726,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511726,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511726,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511726,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511726,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511726,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511727,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511727,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511727,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511727,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511727,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511727,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511727,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511727,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511727,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511727,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511729,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511729,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511729,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511729,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511729,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511730,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511730,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.3
+ERR12511730,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.88
+ERR12511730,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511730,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511731,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511731,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511731,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511731,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511731,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,98.1,100.0
+ERR12511731,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511731,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511731,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511731,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511731,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511732,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511732,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511732,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511732,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511733,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511733,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511733,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511733,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511733,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511733,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511733,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511733,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511733,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511733,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511734,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511734,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511734,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.49
+ERR12511734,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511734,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511734,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511734,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511734,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511734,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511734,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511734,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511736,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511736,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511736,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511736,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511736,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511736,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511736,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511736,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511736,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511736,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511736,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511738,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511738,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511738,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511738,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511738,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511738,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511738,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511738,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511738,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511739,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511739,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511739,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511739,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511739,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511740,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511740,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511740,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511740,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511740,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511740,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511740,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511740,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511740,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511740,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511740,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511743,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511743,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511743,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511743,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511743,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511745,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511745,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511745,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511745,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511745,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511745,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511745,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511745,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511745,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511745,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511747,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511747,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511747,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511747,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511747,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511747,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511747,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511747,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511749,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511749,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511749,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.88
+ERR12511749,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511749,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511751,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511751,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511751,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511751,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511751,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511751,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511751,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511751,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511751,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511752,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511752,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511752,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511752,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511752,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511752,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511752,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511752,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511752,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511753,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511753,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511753,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511753,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511753,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511755,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511755,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511755,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511755,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511755,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511755,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511755,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511755,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511755,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511755,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511755,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511756,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511756,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Tanzania,100.0,99.41
+ERR12511756,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,99.94
+ERR12511756,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511756,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511757,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511757,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511757,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511757,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.49
+ERR12511757,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511757,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511757,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511757,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511757,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511757,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511757,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511758,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511758,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511758,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511758,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511758,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511758,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511758,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511758,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511758,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511758,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511759,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511759,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,99.76,99.05
+ERR12511759,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511759,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511759,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511760,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511760,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511760,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511760,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511760,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511760,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511760,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511760,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511760,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511761,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511761,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511761,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511761,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511761,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511761,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511761,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511761,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511761,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511761,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511762,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511762,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511762,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511762,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511762,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511763,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511763,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511763,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.57
+ERR12511763,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.89
+ERR12511763,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511763,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,99.46
+ERR12511763,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511764,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511764,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.89
+ERR12511764,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.57
+ERR12511764,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511764,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511766,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511766,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511766,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511766,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511766,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511766,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511766,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511766,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511766,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511766,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511766,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511768,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511768,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511768,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.49
+ERR12511768,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511768,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511768,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511768,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511768,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511768,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511768,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511769,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511769,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511769,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511769,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511769,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511772,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511772,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511772,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511772,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511772,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511772,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511772,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511772,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511772,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511773,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511773,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511773,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511773,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511773,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511774,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511774,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511774,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511774,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511774,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511775,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511775,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511775,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511775,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511775,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511779,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511779,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511779,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511779,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511779,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511779,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511779,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511779,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511779,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511779,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511780,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511780,str,streptomycin adenylyltransferase Str,STREPTOMYCIN,Tanzania,100.0,99.88
+ERR12511780,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511780,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511780,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511780,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511781,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511781,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511781,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511781,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511781,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511781,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511782,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511782,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511782,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511782,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511782,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511782,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511782,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511782,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511782,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511782,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511783,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511783,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511783,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511783,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511783,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511784,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511784,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511784,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511784,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511784,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511786,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511786,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511786,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511786,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511786,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511786,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511786,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511786,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511786,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511786,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511787,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511787,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511787,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511787,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511787,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511787,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511787,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511787,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511787,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511787,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511790,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511790,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511790,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511790,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511790,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511790,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511790,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511790,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511790,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511790,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511791,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511791,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511791,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511791,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511791,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511791,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511792,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511792,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511792,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511792,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511792,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511792,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511792,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511792,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511792,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511792,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511793,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511793,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511793,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,99.95
+ERR12511793,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511793,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511793,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511793,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511793,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511793,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511793,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511793,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511794,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511794,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511794,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511794,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511794,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511794,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.93
+ERR12511794,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511794,sat4,streptothricin N-acetyltransferase Sat4,STREPTOTHRICIN,Tanzania,100.0,100.0
+ERR12511794,aph(3')-IIIa,aminoglycoside O-phosphotransferase APH(3')-IIIa,AMIKACIN;KANAMYCIN,Tanzania,100.0,100.0
+ERR12511794,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511798,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511798,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511798,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511798,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511798,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511802,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511802,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511802,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511802,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511805,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511805,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511805,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511805,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511805,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511805,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511811,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511811,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511811,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511811,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511811,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12511811,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511811,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511814,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511814,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511814,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511814,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511814,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511815,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511815,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511815,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511815,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511815,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511816,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511816,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511816,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511816,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511816,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511817,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511817,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511819,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511819,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511819,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.72
+ERR12511819,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511819,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511819,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511819,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511820,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511820,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511820,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511820,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511820,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511820,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,97.26,100.0
+ERR12511820,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,80.09,82.82
+ERR12511820,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511821,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511821,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511821,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511821,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511821,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511821,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511821,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511821,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511821,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511821,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511821,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511823,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511823,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511823,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511823,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511823,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511824,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,98.3,100.0
+ERR12511824,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,99.76,99.05
+ERR12511824,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511824,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511824,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511826,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511826,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511826,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511826,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511826,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511826,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511826,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511826,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511826,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511826,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511827,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.19
+ERR12511827,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.69
+ERR12511827,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.61
+ERR12511827,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.01
+ERR12511828,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.67
+ERR12511828,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511828,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.89
+ERR12511828,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.57
+ERR12511828,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511829,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511829,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511829,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511829,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511829,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,99.76,99.05
+ERR12511830,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511830,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511830,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511830,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511830,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511830,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511830,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511830,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511830,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511830,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511832,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511832,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511832,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.1
+ERR12511832,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.69
+ERR12511832,msr(A),ABC-F type ribosomal protection protein Msr(A),MACROLIDE,Tanzania,100.0,100.0
+ERR12511832,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511832,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511833,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12511833,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.88
+ERR12511833,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511833,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511836,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511836,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511836,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511836,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511836,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511836,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511836,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511836,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511836,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511836,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511837,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511837,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511837,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511837,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511837,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511838,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511838,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511838,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511838,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511838,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511838,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511838,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511838,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511838,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511838,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511839,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511839,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511839,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511839,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.88
+ERR12511839,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511840,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511840,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511840,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511840,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511840,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511840,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511840,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511840,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511842,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511842,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12511842,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511842,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511842,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511842,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511842,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511842,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511842,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511842,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511842,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12511843,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR12511843,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511843,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511843,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.72
+ERR12511843,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511843,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12511845,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511845,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12511845,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12511845,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12511845,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12511845,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12511845,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12511845,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12511845,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511847,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12511847,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12511847,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12511847,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12511847,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12511848,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12511848,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511848,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,92.83
+ERR12511848,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511848,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511850,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,98.81
+ERR12511850,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.81
+ERR12511850,blaR1-2,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,88.28,92.53
+ERR12511850,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.28
+ERR12511850,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.82
+ERR12916291,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12916291,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,99.94
+ERR12916291,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Tanzania,100.0,98.94
+ERR12916291,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916291,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,99.95
+ERR12916291,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916291,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12916291,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,100.0
+ERR12916292,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916292,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12916292,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12916292,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12916292,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,88.03,100.0
+ERR12916292,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12916292,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12916292,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12916292,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12916292,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12916292,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916293,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Tanzania,100.0,99.41
+ERR12916293,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,99.89
+ERR12916293,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12916293,msr(A),ABC-F type ribosomal protection protein Msr(A),MACROLIDE,Tanzania,100.0,100.0
+ERR12916293,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916293,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916293,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.76
+ERR12916294,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12916294,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12916294,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12916294,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12916294,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12916295,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12916295,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12916295,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12916295,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916295,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916295,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12916295,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12916295,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12916295,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12916295,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12916296,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916296,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,98.37
+ERR12916296,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12916296,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12916296,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,99.76
+ERR12916297,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,99.76,99.05
+ERR12916297,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916297,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12916297,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12916297,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12916298,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916298,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916298,mupA,mupirocin-resistant isoleucine--tRNA ligase MupA,MUPIROCIN,Tanzania,100.0,99.94
+ERR12916298,mph(C),Mph(C) family macrolide 2'-phosphotransferase,MACROLIDE,Tanzania,100.0,100.0
+ERR12916298,msr(A),ABC-F type ribosomal protection protein Msr(A),MACROLIDE,Tanzania,100.0,99.93
+ERR12916298,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12916298,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12916298,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Tanzania,100.0,98.97
+ERR12916298,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12916298,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12916298,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12916298,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12916298,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12916299,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,100.0
+ERR12916299,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Tanzania,100.0,100.0
+ERR12916299,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Tanzania,100.0,100.0
+ERR12916299,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Tanzania,100.0,99.56
+ERR12916299,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Tanzania,100.0,100.0
+ERR12916299,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Tanzania,89.15,82.43
+ERR12916299,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,95.54
+ERR12916299,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,93.0
+ERR12916299,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,96.93
+ERR12916299,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.29
+ERR12916300,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Tanzania,100.0,98.42
+ERR12916300,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Tanzania,100.0,97.27
+ERR12916300,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Tanzania,100.0,100.0
+ERR12916300,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Tanzania,100.0,99.05
+ERR12916300,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Tanzania,100.0,99.78
+ERR1764887,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.08
+ERR1764887,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764887,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1764887,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764887,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764889,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764889,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764890,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764890,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764892,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764892,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764893,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764893,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.95
+ERR1764893,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764893,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.33
+ERR1764895,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764895,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764896,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764896,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764896,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764896,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764896,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764897,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764897,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764897,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764897,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764897,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764898,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.3
+ERR1764899,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.3
+ERR1764901,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764901,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764901,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764901,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764903,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1764903,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764903,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764903,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764904,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.76
+ERR1764904,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764904,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764904,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764904,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764904,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764905,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764905,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764905,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764905,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764905,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764905,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764906,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1764906,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764906,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764906,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764907,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1764907,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764907,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764907,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764908,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764908,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764908,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764908,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764909,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764909,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764909,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764909,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764909,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764910,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764910,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764910,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764910,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764910,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764911,erm(A),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(A),MACROLIDE,Kenya,100.0,100.0
+ERR1764911,ant(9)-Ia,aminoglycoside nucleotidyltransferase ANT(9)-Ia,SPECTINOMYCIN,Kenya,100.0,99.87
+ERR1764911,tet(M),tetracycline resistance ribosomal protection protein Tet(M),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764911,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Kenya,100.0,99.9
+ERR1764911,mecR1,beta-lactam sensor/signal transducer MecR1,METHICILLIN,Kenya,100.0,100.0
+ERR1764911,mecI_of_mecA,mecA-type methicillin resistance repressor MecI,METHICILLIN,Kenya,100.0,99.73
+ERR1764911,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.76
+ERR1764911,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764911,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764911,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764911,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764911,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764911,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Kenya,89.15,82.43
+ERR1764911,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764912,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764912,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764912,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764912,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764912,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764915,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,98.94
+ERR1764915,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764915,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764915,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764915,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764916,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.48
+ERR1764916,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764916,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764916,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764917,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764917,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764917,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764917,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764917,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764918,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.48
+ERR1764918,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764918,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764918,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764919,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1764919,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764919,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764919,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764920,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.48
+ERR1764920,tet(M),tetracycline resistance ribosomal protection protein Tet(M),TETRACYCLINE,Kenya,100.0,99.84
+ERR1764920,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Kenya,100.0,100.0
+ERR1764920,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764920,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764920,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,99.74
+ERR1764920,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764921,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764921,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764921,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764921,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764921,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764922,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.56
+ERR1764922,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764922,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764922,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764922,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764923,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764923,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764923,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764923,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764923,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764923,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764924,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764924,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764924,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764924,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764924,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764924,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764925,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764925,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764925,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764925,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764925,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764925,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764926,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764926,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764926,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764926,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764926,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764927,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1764927,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764927,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764927,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764927,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Kenya,100.0,98.97
+ERR1764927,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Kenya,89.15,82.43
+ERR1764928,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764928,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764928,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764928,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764928,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764929,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1764929,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764929,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764929,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764930,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764930,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764930,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764930,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1764931,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764931,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764931,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764931,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764931,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764932,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764932,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764932,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764932,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764932,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764932,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764933,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764933,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.93
+ERR1764933,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764933,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764933,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764933,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764934,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764934,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764934,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764934,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764934,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764934,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764934,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764935,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764935,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764935,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764935,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764935,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764935,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764936,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.3
+ERR1764936,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,96.06
+ERR1764936,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,94.71
+ERR1764936,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,95.63
+ERR1764937,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764937,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764937,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764937,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764938,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764938,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764938,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764938,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.21
+ERR1764938,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764938,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Kenya,100.0,99.86
+ERR1764938,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764939,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764939,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.95
+ERR1764939,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764939,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.26
+ERR1764940,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764940,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764940,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764940,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764941,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764941,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764941,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764941,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764941,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764941,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764942,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764942,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764942,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764942,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764942,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764942,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764942,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764943,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764943,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764943,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764943,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764943,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764943,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764944,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.29
+ERR1764944,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764944,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764944,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764944,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764944,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764944,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764945,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764945,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.82
+ERR1764945,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764945,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1764945,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.83
+ERR1764945,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.81
+ERR1764945,tet(M),tetracycline resistance ribosomal protection protein Tet(M),TETRACYCLINE,Kenya,100.0,99.9
+ERR1764946,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764946,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764946,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764946,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764946,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764946,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,98.19,100.0
+ERR1764946,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764947,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764947,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764947,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764947,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764947,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764947,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764948,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764948,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764948,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764948,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764948,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764948,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764948,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764949,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764949,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764949,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764949,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764949,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764949,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764950,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764950,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.95
+ERR1764950,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.1
+ERR1764950,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764950,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,83.62,100.0
+ERR1764951,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764951,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764951,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764951,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764951,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764951,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764951,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764952,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.63
+ERR1764952,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764952,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764952,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764953,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764953,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764953,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764953,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764953,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764954,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.05
+ERR1764954,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764954,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764954,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764954,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764954,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764954,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1764955,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764955,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.95
+ERR1764955,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764955,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.33
+ERR1764956,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764956,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764956,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764956,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764956,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764956,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764957,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764957,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764957,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764957,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764957,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764957,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,99.76,99.76
+ERR1764958,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764958,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764958,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764958,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764958,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764959,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.63
+ERR1764959,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764959,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764959,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764960,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764960,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764960,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764960,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764960,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764960,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764961,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764961,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764961,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764961,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764961,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764961,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764962,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1764962,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.95
+ERR1764962,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764962,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.26
+ERR1764963,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1764963,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1764963,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1764963,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1764963,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Kenya,100.0,98.97
+ERR1764963,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Kenya,100.0,100.0
+ERR1764963,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Kenya,89.15,82.43
+ERR1764964,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764964,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764964,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764964,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.56
+ERR1764964,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764965,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764965,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1764967,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764967,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764967,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764967,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764967,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764967,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764968,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764968,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764968,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764968,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764968,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764969,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764969,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764969,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764969,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764969,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Kenya,100.0,100.0
+ERR1764970,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764970,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764970,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764970,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764970,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764971,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764971,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.93
+ERR1764971,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764971,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764971,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764971,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764972,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.56
+ERR1764972,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764973,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764973,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764973,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764973,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764973,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764974,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764974,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764974,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764974,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764975,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764975,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764975,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764975,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764975,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764975,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764976,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764976,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764977,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764977,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764977,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764977,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764978,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.93
+ERR1764978,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764978,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764978,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764978,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764979,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764979,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764979,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764979,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764979,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764980,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764980,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764980,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764980,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764981,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764981,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764981,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764981,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764981,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764982,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764982,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764982,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764982,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764982,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764983,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764983,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764983,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764983,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764983,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764983,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764984,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764984,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764984,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764984,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764984,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764985,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764985,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764985,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764985,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1764986,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764986,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764986,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764986,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764986,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1764986,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764987,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764987,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764987,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764987,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.76
+ERR1764987,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764988,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764988,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764988,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764988,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764988,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764989,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764989,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764989,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764989,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764989,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764989,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764990,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764990,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764990,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764990,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764990,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764990,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764991,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764991,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764991,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764991,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764991,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764992,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764992,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,99.64
+ERR1764992,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764992,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764992,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764992,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,93.0
+ERR1764992,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.93
+ERR1764993,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764993,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764993,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764993,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764993,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764993,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764994,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764994,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764994,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764994,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764994,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764995,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764996,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764996,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1764996,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764996,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1764996,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1764996,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1764997,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1764997,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1764997,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1764997,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1764997,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764997,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1764998,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764998,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764998,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764998,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764998,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1764999,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1764999,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1764999,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1764999,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1764999,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765000,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765000,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765000,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765000,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765000,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1765000,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765001,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765001,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765001,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765001,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765001,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765001,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765002,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765002,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765002,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765002,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765002,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765004,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.05
+ERR1765004,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765004,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765004,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765004,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765004,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1765005,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.78
+ERR1765005,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765005,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765005,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765005,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.05
+ERR1765006,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765006,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765006,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765006,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.89
+ERR1765006,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765006,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765007,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765007,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1765007,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.85
+ERR1765007,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1765007,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.83
+ERR1765007,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765008,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765008,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.21
+ERR1765008,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765008,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765008,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765008,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765009,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765009,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765009,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765009,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765010,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765010,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.76
+ERR1765010,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765010,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.1
+ERR1765010,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.95
+ERR1765011,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,99.93,98.23
+ERR1765011,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765011,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765011,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765012,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765012,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765012,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765012,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1765012,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1765012,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1765012,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1765013,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765013,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765013,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765013,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765014,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765014,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765014,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765014,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765014,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Kenya,100.0,100.0
+ERR1765014,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765014,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765015,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765015,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.76
+ERR1765015,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765015,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765016,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765016,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765016,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765016,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.21
+ERR1765016,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765016,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765017,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765017,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765017,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765017,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765017,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765018,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765018,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765018,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765018,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765018,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765018,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765019,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765019,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765019,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765019,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765020,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765020,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765020,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765020,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765021,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765021,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765021,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1765021,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1765021,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1765021,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1765022,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765022,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765022,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765022,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765022,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765023,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765023,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765023,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765023,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765024,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765024,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765024,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765024,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765024,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,99.76,99.05
+ERR1765025,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765025,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765025,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765025,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765025,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765025,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765026,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765026,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765026,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765026,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765026,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,99.76,99.05
+ERR1765027,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765027,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765027,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765027,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765027,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765028,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765028,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765028,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765028,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765029,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765029,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1765029,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1765029,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1765030,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765030,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765030,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765030,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765030,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1765030,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1765030,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.76
+ERR1765031,vga(A),ABC-F type ribosomal protection protein Vga(A),LINCOSAMIDE,Kenya,100.0,99.87
+ERR1765031,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765031,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765031,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765031,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765031,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Kenya,100.0,98.97
+ERR1765031,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Kenya,100.0,100.0
+ERR1765032,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765032,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765032,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765032,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765032,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765032,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,88.33,100.0
+ERR1765032,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Kenya,100.0,100.0
+ERR1765032,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765033,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.19
+ERR1765033,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1765033,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.61
+ERR1765033,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765034,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765034,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765034,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765034,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765035,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765035,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765035,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1765035,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1765035,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1765035,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1765036,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765036,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765036,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765036,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765036,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765036,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765037,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765037,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765037,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765037,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765038,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765038,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,98.81
+ERR1765038,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.85
+ERR1765038,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.81
+ERR1765038,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.83
+ERR1765038,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1765039,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765039,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765039,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765039,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765039,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765040,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765040,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765040,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765040,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765041,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765041,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765041,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765041,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765041,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765042,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765042,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765042,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765042,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.3
+ERR1765043,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765043,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765043,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765043,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765043,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765044,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765044,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765044,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765044,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.76
+ERR1765044,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765044,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.55
+ERR1765044,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.01
+ERR1765045,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765045,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765045,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765045,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765045,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1765045,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,97.61,100.0
+ERR1765046,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765046,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1765046,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765046,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1765046,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1765047,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1765047,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765047,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765047,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765048,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765048,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765048,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765048,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1765048,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765049,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765049,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765049,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765049,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765049,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765049,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765050,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765050,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765050,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765050,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Kenya,90.14,100.0
+ERR1765050,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1765050,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765051,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1765051,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1765051,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1765051,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1765051,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.56
+ERR1765052,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.33
+ERR1765052,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1765052,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.83
+ERR1765052,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.69
+ERR1765052,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1791869,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.08
+ERR1791869,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791869,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.28
+ERR1791869,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1791869,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.45
+ERR1791870,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791870,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791870,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791870,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791870,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791871,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1791871,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791871,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1791871,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.21
+ERR1791871,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791871,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Kenya,100.0,100.0
+ERR1791871,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1791872,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791872,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791872,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1791872,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,99.56
+ERR1791872,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791873,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791873,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791873,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791873,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791874,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791874,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791874,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791874,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791874,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791875,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791875,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791875,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791875,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791875,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791876,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791876,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791876,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.76
+ERR1791876,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791876,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791877,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1791877,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,99.29
+ERR1791877,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791877,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,96.57
+ERR1791877,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,92.89
+ERR1791877,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,95.54
+ERR1791878,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791878,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791878,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791878,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791878,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791879,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Kenya,100.0,100.0
+ERR1791879,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1791879,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,100.0
+ERR1791879,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,99.94
+ERR1791879,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Kenya,100.0,99.41
+ERR1791879,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791880,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR1791880,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,99.88
+ERR1791880,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791880,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791880,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791881,vga(A),ABC-F type ribosomal protection protein Vga(A),LINCOSAMIDE,Kenya,100.0,99.87
+ERR1791881,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,100.0
+ERR1791881,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Kenya,100.0,100.0
+ERR1791881,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Kenya,100.0,97.27
+ERR1791881,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Kenya,100.0,98.42
+ERR1791881,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Kenya,100.0,98.97
+ERR1791881,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Kenya,100.0,100.0
+ERR1791882,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Kenya,100.0,100.0
+ERR1791882,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Kenya,100.0,98.37
+ERR4692239,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692239,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692239,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692239,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692239,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692240,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Uganda,100.0,98.81
+ERR4692240,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692240,blaPC1,BlaZ family penicillin-hydrolyzing class A beta-lactamase PC1,BETA-LACTAM,Uganda,100.0,99.41
+ERR4692240,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,87.14,100.0
+ERR4692240,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692241,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692241,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692241,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692241,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692241,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692245,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692245,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692245,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692245,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692245,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692246,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692246,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692246,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,97.27
+ERR4692246,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692246,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692246,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692257,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692257,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Uganda,100.0,99.76
+ERR4692257,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.05
+ERR4692257,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,99.26
+ERR4692257,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,99.74
+ERR4692257,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692259,tet(M),tetracycline resistance ribosomal protection protein Tet(M),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692259,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692259,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,91.67,100.0
+ERR4692259,ant(9)-Ia,aminoglycoside nucleotidyltransferase ANT(9)-Ia,SPECTINOMYCIN,Uganda,100.0,99.87
+ERR4692259,erm(A),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(A),MACROLIDE,Uganda,100.0,100.0
+ERR4692259,aph(3')-IIIa,aminoglycoside O-phosphotransferase APH(3')-IIIa,AMIKACIN;KANAMYCIN,Uganda,100.0,99.87
+ERR4692259,sat4,streptothricin N-acetyltransferase Sat4,STREPTOTHRICIN,Uganda,100.0,100.0
+ERR4692259,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Uganda,100.0,99.76
+ERR4692259,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,100.0
+ERR4692259,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692259,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Uganda,89.15,82.43
+ERR4692259,mecI_of_mecA,mecA-type methicillin resistance repressor MecI,METHICILLIN,Uganda,100.0,99.73
+ERR4692259,mecR1,beta-lactam sensor/signal transducer MecR1,METHICILLIN,Uganda,100.0,100.0
+ERR4692259,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Uganda,100.0,99.9
+ERR4692260,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692260,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692260,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692260,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692262,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692262,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692262,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692262,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692264,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692264,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692264,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692264,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,97.27
+ERR4692264,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692264,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692266,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692266,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692266,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692266,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692267,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+ERR4692267,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+ERR4692267,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692267,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+ERR4692269,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Uganda,100.0,100.0
+ERR4692269,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+ERR4692269,dfrC,trimethoprim-resistant dihydrofolate reductase DfrC,TRIMETHOPRIM,Uganda,100.0,98.97
+ERR4692269,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,99.56
+ERR4692269,fosB-Saur,FosB1/FosB3 family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,Uganda,100.0,99.29
+ERR4692269,erm(C),23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(C),MACROLIDE,Uganda,100.0,100.0
+ERR4692269,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Uganda,89.15,82.43
+ERR4692269,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,100.0
+ERR4692269,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,95.54
+ERR4692269,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,93.0
+ERR4692269,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,96.93
+SRR31799955,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+SRR31799955,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+SRR31799955,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+SRR31799955,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,97.27
+SRR31799955,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+SRR31799973,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+SRR31799973,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,99.93
+SRR31799973,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,100.0
+SRR31799973,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,97.27
+SRR31799973,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.42
+SRR31799973,mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,METHICILLIN,Uganda,100.0,100.0
+SRR31799973,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,99.93
+SRR31799973,aph(3')-IIIa,aminoglycoside O-phosphotransferase APH(3')-IIIa,AMIKACIN;KANAMYCIN,Uganda,100.0,100.0
+SRR31799973,sat4,streptothricin N-acetyltransferase Sat4,STREPTOTHRICIN,Uganda,100.0,100.0
+SRR31799973,aph(2'')-Ih,aminoglycoside O-phosphotransferase APH(2'')-Ih,AMIKACIN;GENTAMICIN;KANAMYCIN;TOBRAMYCIN,Uganda,89.15,82.31
+SRR31799977,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+SRR31799977,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+SRR31799977,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+SRR31800042,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+SRR31800042,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37
+SRR31800042,blaZ,penicillin-hydrolyzing class A beta-lactamase BlaZ,BETA-LACTAM,Uganda,100.0,99.88
+SRR31800042,blaR1,beta-lactam sensor/signal transducer BlaR1,BETA-LACTAM,Uganda,100.0,97.27
+SRR31800042,blaI_of_Z,penicillinase repressor BlaI,BETA-LACTAM,Uganda,100.0,98.16
+SRR31800042,tet(K),tetracycline efflux MFS transporter Tet(K),TETRACYCLINE,Uganda,100.0,100.0
+SRR31800733,dfrG,trimethoprim-resistant dihydrofolate reductase DfrG,TRIMETHOPRIM,Uganda,100.0,100.0
+SRR31800733,tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,Uganda,100.0,98.37

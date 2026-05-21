@@ -1,0 +1,25 @@
+MLST ANALYSIS STATISTICAL RESULTS
+==================================================
+
+Total isolates analyzed: 313
+Total distinct STs: 33
+  - Known STs: 32
+  - Novel STs: 1
+
+Clonal complexes identified: 21
+Major CCs (≥5 isolates): 12
+
+CHI-SQUARE TEST RESULTS
+------------------------------
+Test: Distribution of top 5 CCs across countries
+Chi-square statistic: χ² = 38.17
+Degrees of freedom: df = 8
+P-value: p = 0.0000
+
+PAIRWISE COMPARISONS (Benjamini-Hochberg corrected)
+------------------------------
+Kenya vs Tanzania: p_raw = 0.0000, p_adj = 0.0000
+Kenya vs Uganda: p_raw = 0.2530, p_adj = 0.2530
+Tanzania vs Uganda: p_raw = 0.0064, p_adj = 0.0096
+
+* p < 0.05, ** p < 0.01, *** p < 0.001

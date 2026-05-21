@@ -1,0 +1,10 @@
+
+**2.2 Population Structure Reveals Geographic Clustering of S. aureus Clones**
+
+Multi-locus sequence typing (MLST) analysis of 313 S. aureus isolates with complete 7-locus profiles revealed substantial genetic diversity across East Africa. A total of 33 distinct sequence types (STs) were identified, including 1 novel allelic combinations not previously recorded in the PubMLST database. Novel STs were particularly prominent in Uganda, where they accounted for 0.0% of isolates.
+
+The population was dominated by 21 clonal complexes (CCs) inferred using a graph-based approach connecting STs differing at ≤2 loci. CC152 (ST152) emerged as the most prevalent lineage overall, comprising 31.6% (99/313) of isolates and circulating in all three countries. The second most common lineage, CC8 (ST8), accounted for 24.0% of isolates but showed striking geographic heterogeneity, representing 41.9% of Tanzanian isolates compared to only 12.9% in Kenya and 5.6% in Uganda.
+
+Other clinically significant CCs displayed distinct geographic patterns: CC88 (ST188/ST88) and CC80 (ST80) were more common in Kenya (9.9% and 7.6%, respectively), while CC121 (ST121) was exclusively detected in Tanzania (6.5%). CC1633 (ST1633), a potentially region-specific complex, was identified in both Kenya and Uganda.
+
+A chi-square test of independence confirmed that the distribution of the five major clonal complexes was significantly dependent on country of origin (χ²(8) = 38.2, p = 0.000). Post-hoc pairwise comparisons with Benjamini-Hochberg correction revealed significant differences between all country pairs: Kenya vs Tanzania (p = 0.0000), Kenya vs Uganda (p = 0.2530), and Tanzania vs Uganda (p = 0.0096), demonstrating strong geographic structuring of the S. aureus population in East Africa.

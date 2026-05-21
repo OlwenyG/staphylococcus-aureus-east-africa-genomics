@@ -1,0 +1,8 @@
+Metric,Value
+Total Samples,313
+Total Unique Genes,80
+Core Genes (≥90%),51
+Accessory Genes (20-89%),18
+Rare Genes (<20%),11
+Average Genes per Sample,62.0 ± 3.0
+PVL Positive Samples,298/313 (95.2%)
